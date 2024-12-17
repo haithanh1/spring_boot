@@ -1,0 +1,552 @@
+2024-02-21 23:25:43 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:25:43 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:25:46 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:25:46 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:25:49 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:25:49 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:25:52 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:25:52 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:25:52 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:25:55 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:25:55 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:25:58 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:25:58 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:25:58 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:26:01 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:26:01 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:26:04 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:26:04 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:26:08 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:26:08 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:26:08 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:26:11 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:26:11 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:26:14 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:26:14 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:26:17 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:26:17 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:26:17 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:26:20 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:26:20 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:26:23 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:26:23 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:26:23 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:26:25 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:26:25 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:26:29 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:26:29 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:26:32 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:26:32 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:26:32 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:26:35 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:26:35 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:26:38 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:26:38 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:26:38 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:26:41 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:26:41 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:26:44 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:26:44 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:26:47 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:26:47 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:26:47 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:26:50 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:26:50 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:26:53 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:26:53 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:26:53 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:26:56 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:26:56 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:27:00 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:27:00 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:27:03 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:27:03 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:27:03 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:27:06 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:27:06 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:27:09 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:27:09 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:27:12 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:27:12 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:27:12 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:27:15 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:27:15 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:27:18 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:27:18 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:27:18 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:27:21 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:27:21 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:27:21 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:27:25 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:27:25 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:27:28 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:27:28 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:27:28 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:27:31 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:27:31 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:27:34 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:27:34 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:27:37 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:27:37 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:27:37 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:27:40 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:27:40 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:27:43 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:27:43 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:27:43 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:27:46 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:27:46 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:27:49 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:27:49 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:27:52 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:27:52 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:27:52 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:27:55 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:27:55 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:27:58 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:27:58 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:27:58 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:28:01 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:28:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:28:04 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:28:04 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:28:07 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:28:07 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:28:07 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:28:11 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:28:11 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:28:14 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:28:14 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:28:16 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:28:16 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:28:16 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:28:19 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:28:19 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:28:23 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:28:23 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:28:23 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:28:25 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:28:25 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:28:29 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:28:29 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:28:32 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:28:32 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:28:32 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:28:35 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:28:35 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:28:38 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:28:38 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:28:38 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:28:41 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:28:41 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:28:44 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:28:44 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:28:47 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:28:47 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:28:47 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:28:50 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:28:50 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:28:53 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:28:53 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:28:53 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:28:56 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:28:56 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:28:59 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:28:59 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:29:02 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:29:02 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:29:02 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:29:05 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:29:05 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:29:08 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:29:08 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:29:08 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:29:11 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:29:11 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:29:15 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:29:15 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:29:18 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:29:18 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:29:18 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:29:21 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:29:21 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:29:24 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:29:24 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:29:27 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:29:27 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:29:27 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 23:29:30 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:29:30 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:29:33 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 23:29:33 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 23:29:33 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-22 21:52:35 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 22168 (D:\demo (9)\demo\target\classes started by ADMIN in D:\demo (9)\demo)
+2024-02-22 21:52:35 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-22 21:52:36 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-22 21:52:36 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 3 JPA repository interfaces.
+2024-02-22 21:52:37 [INFO ] [main] GenericScope - BeanFactory id=b2ecd949-a905-34fd-83b4-c68e0ad64c3b
+2024-02-22 21:52:37 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-22 21:52:37 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-22 21:52:37 [INFO ] [main] StandardService - Starting service [Tomcat]
+2024-02-22 21:52:37 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-02-22 21:52:38 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2024-02-22 21:52:38 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2024 ms
+2024-02-22 21:52:38 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-22 21:52:38 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-02-22 21:52:38 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-02-22 21:52:38 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-02-22 21:52:39 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-02-22 21:52:39 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-02-22 21:52:39 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-22 21:52:40 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-22 21:52:40 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-22 21:52:40 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@68c3aa38, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1196537d, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e4c0bc7, org.springframework.security.web.header.HeaderWriterFilter@df34b01, org.springframework.security.web.authentication.logout.LogoutFilter@1a67bde5, com.example.config.JwtAuthenticationFilter@3b9a2629, org.springframework.security.web.session.ConcurrentSessionFilter@3fc2e100, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@775fec4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b5f61cc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@267a8777, org.springframework.security.web.session.SessionManagementFilter@7a57c5d9, org.springframework.security.web.access.ExceptionTranslationFilter@cce672c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@255b84a9]
+2024-02-22 21:52:41 [INFO ] [main] ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.26.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-my-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 20000
+	fetch.min.bytes = 1
+	group.id = my-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 100
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 60000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2024-02-22 21:52:41 [INFO ] [main] AppInfoParser - Kafka version: 3.1.2
+2024-02-22 21:52:41 [INFO ] [main] AppInfoParser - Kafka commitId: f8c67dc3ae0a3265
+2024-02-22 21:52:41 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1708613561796
+2024-02-22 21:52:41 [INFO ] [main] KafkaConsumer - [Consumer clientId=consumer-my-group-1, groupId=my-group] Subscribed to partition(s): demo1-0
+2024-02-22 21:52:41 [INFO ] [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-22 21:52:41 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] KafkaConsumer - [Consumer clientId=consumer-my-group-1, groupId=my-group] Seeking to offset 0 for partition demo1-0
+2024-02-22 21:52:41 [INFO ] [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-22 21:52:41 [INFO ] [main] DemoApplication - Started DemoApplication in 6.659 seconds (JVM running for 8.666)
+2024-02-22 21:52:43 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:52:43 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:52:43 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:52:46 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:52:46 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:52:46 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:52:48 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:52:48 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:52:48 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:52:50 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:52:50 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:52:50 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:52:52 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:52:52 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:52:52 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:52:55 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:52:55 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:52:55 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:52:58 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:52:58 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:52:58 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:53:01 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:53:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:53:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:53:04 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:53:04 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:53:04 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:53:08 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:53:08 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:53:08 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:53:11 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:53:11 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:53:11 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:53:14 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:53:14 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:53:14 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:53:17 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:53:17 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:53:17 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:53:20 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:53:20 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:53:20 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:53:23 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:53:23 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:53:23 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:53:26 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:53:26 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:53:26 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:53:29 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:53:29 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:53:29 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:53:32 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:53:32 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:53:32 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:53:35 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:53:35 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:53:35 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:53:38 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:53:38 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:53:38 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:53:41 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:53:41 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:53:41 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:53:44 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:53:44 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:53:44 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:53:47 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:53:47 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:53:47 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:53:51 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:53:51 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:53:51 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:53:54 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:53:54 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:53:54 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:53:57 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:53:57 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:53:57 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:54:00 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:54:00 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:54:00 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:54:03 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:54:03 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:54:03 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:54:06 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:54:06 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:54:06 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:54:09 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:54:09 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:54:09 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:54:12 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:54:12 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:54:12 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:54:15 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:54:15 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:54:15 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:54:18 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:54:18 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:54:18 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:54:21 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:54:21 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:54:21 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:54:25 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:54:25 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:54:25 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:54:28 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:54:28 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:54:28 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:54:31 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:54:31 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:54:31 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:54:34 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:54:34 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:54:34 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:54:37 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:54:37 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:54:37 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:54:40 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:54:40 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:54:40 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:54:43 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:54:43 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:54:43 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:54:46 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:54:46 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:54:46 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:54:49 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:54:49 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:54:49 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:54:53 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:54:53 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:54:53 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:54:56 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:54:56 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:54:56 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:54:58 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:54:58 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:54:58 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:55:01 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:55:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:55:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:55:04 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:55:04 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:55:04 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:55:08 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:55:08 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:55:08 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:55:11 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:55:11 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:55:11 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:55:14 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:55:14 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:55:14 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:55:17 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:55:17 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:55:17 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:55:20 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:55:20 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:55:20 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:55:23 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:55:23 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:55:23 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:55:26 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:55:26 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:55:26 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:55:29 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:55:29 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:55:29 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:55:32 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:55:32 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:55:32 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:55:36 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:55:36 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:55:36 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:55:39 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:55:39 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:55:39 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:55:42 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:55:42 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:55:42 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:55:45 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:55:45 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:55:45 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:55:48 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:55:48 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:55:48 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:55:51 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:55:51 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:55:51 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:55:54 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:55:54 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:55:54 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:55:57 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:55:57 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:55:57 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:56:00 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:56:00 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:56:00 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:56:03 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:56:03 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:56:03 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:56:06 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:56:06 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:56:06 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:56:09 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:56:09 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:56:09 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:56:12 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:56:12 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:56:12 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:56:15 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:56:15 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-22 21:56:15 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-22 21:56:19 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-22 21:56:19 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.

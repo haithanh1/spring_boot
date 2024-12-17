@@ -1,0 +1,625 @@
+2024-04-01 22:54:45 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 10748 (D:\spring_boot\demo\target\classes started by ADMIN in D:\spring_boot\demo)
+2024-04-01 22:54:45 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 22:54:46 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01 22:54:46 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 3 JPA repository interfaces.
+2024-04-01 22:54:46 [INFO ] [main] GenericScope - BeanFactory id=51b9c6ee-3542-345c-be07-cf936a67cd5f
+2024-04-01 22:54:46 [WARN ] [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'metaDataSourceAdvisor': Cannot resolve reference to bean 'methodSecurityMetadataSource' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.example.service.address.AddressService [Xlint:invalidAbsoluteTypeName]
+2024-04-01 22:54:46 [INFO ] [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-04-01 22:54:46 [ERROR] [main] SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'metaDataSourceAdvisor': Cannot resolve reference to bean 'methodSecurityMetadataSource' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.example.service.address.AddressService [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:270) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:762) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:567) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:22) ~[classes/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'metaDataSourceAdvisor': Cannot resolve reference to bean 'methodSecurityMetadataSource' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.example.service.address.AddressService [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:693) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:198) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 14 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.example.service.address.AddressService [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:693) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:198) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 14 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.example.service.address.AddressService [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:693) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:198) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 14 more
+Caused by: java.lang.IllegalArgumentException: warning no match for this type name: com.example.service.address.AddressService [Xlint:invalidAbsoluteTypeName]
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:319) ~[aspectjweaver-1.9.7.jar:?]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:227) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.obtainPointcutExpression(AspectJExpressionPointcut.java:198) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:177) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:226) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:289) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:321) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:128) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:97) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:78) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:341) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:293) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:455) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:693) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:198) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 14 more
+2024-04-01 22:55:27 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 18988 (D:\spring_boot\demo\target\classes started by ADMIN in D:\spring_boot\demo)
+2024-04-01 22:55:27 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 22:55:28 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01 22:55:28 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 3 JPA repository interfaces.
+2024-04-01 22:55:28 [INFO ] [main] GenericScope - BeanFactory id=51b9c6ee-3542-345c-be07-cf936a67cd5f
+2024-04-01 22:55:28 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-04-01 22:55:28 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-01 22:55:28 [INFO ] [main] StandardService - Starting service [Tomcat]
+2024-04-01 22:55:28 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-04-01 22:55:28 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2024-04-01 22:55:28 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1170 ms
+2024-04-01 22:55:29 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01 22:55:29 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-04-01 22:55:29 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-01 22:55:29 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-04-01 22:55:29 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-04-01 22:55:29 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-01 22:55:30 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-01 22:55:30 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 22:55:30 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01 22:55:30 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@397bd46b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d863bb, org.springframework.security.web.context.SecurityContextPersistenceFilter@356ab368, org.springframework.security.web.header.HeaderWriterFilter@54cce500, org.springframework.security.web.authentication.logout.LogoutFilter@765eb801, com.example.config.JwtAuthenticationFilter@3c34c491, org.springframework.security.web.session.ConcurrentSessionFilter@80b6098, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c555e1e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@139b3a29, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76ebd595, org.springframework.security.web.session.SessionManagementFilter@3fe3ebb3, org.springframework.security.web.access.ExceptionTranslationFilter@6046fba0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@442151d1]
+2024-04-01 22:55:31 [INFO ] [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-04-01 22:55:31 [INFO ] [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-01 22:55:31 [INFO ] [main] DemoApplication - Started DemoApplication in 4.027 seconds (JVM running for 4.968)
+2024-04-01 23:02:28 [INFO ] [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 23:02:28 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-01 23:02:28 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-04-01 23:02:33 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 3488 (D:\spring_boot\demo\target\classes started by ADMIN in D:\spring_boot\demo)
+2024-04-01 23:02:33 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 23:02:33 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01 23:02:33 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2024-04-01 23:02:43 [INFO ] [main] GenericScope - BeanFactory id=11eff447-0db4-3e44-9364-802fc513ee77
+2024-04-01 23:02:43 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-04-01 23:02:43 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 10615 ms
+2024-04-01 23:02:43 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01 23:02:43 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-04-01 23:02:43 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-01 23:02:43 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-04-01 23:02:44 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-04-01 23:02:44 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-01 23:02:44 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-01 23:02:44 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 23:02:45 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01 23:02:45 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@20d92f1e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3cf7433e, org.springframework.security.web.context.SecurityContextPersistenceFilter@21202507, org.springframework.security.web.header.HeaderWriterFilter@1ecf784f, org.springframework.security.web.authentication.logout.LogoutFilter@2f98fe6f, com.example.config.JwtAuthenticationFilter@70f8d217, org.springframework.security.web.session.ConcurrentSessionFilter@329aa2d1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4379fe2a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41831611, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@68cc6319, org.springframework.security.web.session.SessionManagementFilter@1c25385a, org.springframework.security.web.access.ExceptionTranslationFilter@6a4d57b7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5b160208]
+2024-04-01 23:02:45 [INFO ] [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-01 23:02:45 [INFO ] [main] DemoApplication - Started DemoApplication in 13.378 seconds (JVM running for 14.241)
+2024-04-01 23:02:45 [INFO ] [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 23:02:45 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-01 23:02:45 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-04-01 23:02:50 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 4384 (D:\spring_boot\demo\target\classes started by ADMIN in D:\spring_boot\demo)
+2024-04-01 23:02:50 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 23:02:50 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01 23:02:50 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 3 JPA repository interfaces.
+2024-04-01 23:03:18 [INFO ] [main] GenericScope - BeanFactory id=11eff447-0db4-3e44-9364-802fc513ee77
+2024-04-01 23:03:19 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-04-01 23:03:19 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 29086 ms
+2024-04-01 23:03:33 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 17496 (D:\spring_boot\demo\target\classes started by ADMIN in D:\spring_boot\demo)
+2024-04-01 23:03:33 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 23:03:33 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01 23:03:33 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 3 JPA repository interfaces.
+2024-04-01 23:03:52 [INFO ] [main] GenericScope - BeanFactory id=11eff447-0db4-3e44-9364-802fc513ee77
+2024-04-01 23:03:53 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-04-01 23:03:53 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 20131 ms
+2024-04-01 23:03:53 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01 23:03:53 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-04-01 23:03:53 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-01 23:03:53 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-04-01 23:03:53 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-04-01 23:03:53 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-01 23:03:54 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-01 23:03:54 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 23:03:54 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01 23:03:54 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1c41931a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62cb977a, org.springframework.security.web.context.SecurityContextPersistenceFilter@e638553, org.springframework.security.web.header.HeaderWriterFilter@74d3b331, org.springframework.security.web.authentication.logout.LogoutFilter@7c919e1e, com.example.config.JwtAuthenticationFilter@43b3b1b0, org.springframework.security.web.session.ConcurrentSessionFilter@6c92a59d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75d0cac6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7657d29f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7db70494, org.springframework.security.web.session.SessionManagementFilter@7f5a25e2, org.springframework.security.web.access.ExceptionTranslationFilter@42ea14b8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@395115ac]
+2024-04-01 23:03:55 [INFO ] [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-01 23:03:55 [INFO ] [main] DemoApplication - Started DemoApplication in 22.904 seconds (JVM running for 23.672)
+2024-04-01 23:03:55 [INFO ] [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 23:03:55 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-01 23:03:55 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-04-01 23:03:59 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 8120 (D:\spring_boot\demo\target\classes started by ADMIN in D:\spring_boot\demo)
+2024-04-01 23:03:59 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 23:03:59 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01 23:04:00 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+2024-04-01 23:04:28 [INFO ] [main] GenericScope - BeanFactory id=51b9c6ee-3542-345c-be07-cf936a67cd5f
+2024-04-01 23:04:29 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-04-01 23:04:29 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-01 23:04:29 [INFO ] [main] StandardService - Starting service [Tomcat]
+2024-04-01 23:04:29 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-04-01 23:04:29 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2024-04-01 23:04:29 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 29652 ms
+2024-04-01 23:04:29 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01 23:04:29 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-04-01 23:04:29 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-01 23:04:29 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-04-01 23:04:29 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-04-01 23:04:29 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-01 23:04:30 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-01 23:04:30 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 23:04:30 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01 23:04:30 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4936fbc6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b4c89b6, org.springframework.security.web.context.SecurityContextPersistenceFilter@3458be63, org.springframework.security.web.header.HeaderWriterFilter@5c9168c3, org.springframework.security.web.authentication.logout.LogoutFilter@1735e1c4, com.example.config.JwtAuthenticationFilter@70f8d217, org.springframework.security.web.session.ConcurrentSessionFilter@5c1ea00, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5cb32140, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33986be7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54f62ac6, org.springframework.security.web.session.SessionManagementFilter@470866d1, org.springframework.security.web.access.ExceptionTranslationFilter@689eab53, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d863bb]
+2024-04-01 23:04:31 [INFO ] [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-04-01 23:04:31 [INFO ] [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-01 23:04:31 [INFO ] [main] DemoApplication - Started DemoApplication in 32.509 seconds (JVM running for 33.472)
+2024-04-01 23:05:54 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 4696 (D:\spring_boot\demo\target\classes started by ADMIN in D:\spring_boot\demo)
+2024-04-01 23:05:54 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 23:05:55 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01 23:05:55 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 3 JPA repository interfaces.
+2024-04-01 23:05:55 [INFO ] [main] GenericScope - BeanFactory id=51b9c6ee-3542-345c-be07-cf936a67cd5f
+2024-04-01 23:05:55 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-04-01 23:05:55 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-01 23:05:55 [INFO ] [main] StandardService - Starting service [Tomcat]
+2024-04-01 23:05:55 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-04-01 23:05:56 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2024-04-01 23:05:56 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1239 ms
+2024-04-01 23:05:56 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01 23:05:56 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-04-01 23:05:56 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-01 23:05:56 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-04-01 23:05:56 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-04-01 23:05:56 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-01 23:05:57 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-01 23:05:57 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 23:05:57 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01 23:05:57 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6ac0fd1d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@744199bb, org.springframework.security.web.context.SecurityContextPersistenceFilter@51d2d336, org.springframework.security.web.header.HeaderWriterFilter@170f0fd6, org.springframework.security.web.authentication.logout.LogoutFilter@749ffdc7, com.example.config.JwtAuthenticationFilter@10280879, org.springframework.security.web.session.ConcurrentSessionFilter@106b476a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39921410, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e4bccc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ce8bf64, org.springframework.security.web.session.SessionManagementFilter@2b06c388, org.springframework.security.web.access.ExceptionTranslationFilter@544733a4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ba4b32b]
+2024-04-01 23:05:58 [INFO ] [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-04-01 23:05:58 [WARN ] [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2024-04-01 23:05:58 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 23:05:58 [INFO ] [main] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-01 23:05:58 [INFO ] [main] HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-04-01 23:05:58 [INFO ] [main] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2024-04-01 23:05:58 [INFO ] [main] StandardService - Stopping service [Tomcat]
+2024-04-01 23:05:58 [INFO ] [main] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-01 23:05:58 [INFO ] [main] Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2024-04-01 23:05:58 [INFO ] [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-04-01 23:05:58 [ERROR] [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-04-01 23:08:12 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 13392 (D:\spring_boot\demo\target\classes started by ADMIN in D:\spring_boot\demo)
+2024-04-01 23:08:12 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 23:08:12 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01 23:08:12 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2024-04-01 23:08:12 [INFO ] [main] GenericScope - BeanFactory id=51b9c6ee-3542-345c-be07-cf936a67cd5f
+2024-04-01 23:08:13 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-04-01 23:08:13 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-01 23:08:13 [INFO ] [main] StandardService - Starting service [Tomcat]
+2024-04-01 23:08:13 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-04-01 23:08:13 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2024-04-01 23:08:13 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1210 ms
+2024-04-01 23:08:13 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01 23:08:13 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-04-01 23:08:13 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-01 23:08:13 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-04-01 23:08:13 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-04-01 23:08:13 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-01 23:08:14 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-01 23:08:14 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 23:08:14 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01 23:08:15 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2b6ff016, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5aefdb9e, org.springframework.security.web.context.SecurityContextPersistenceFilter@33502cfe, org.springframework.security.web.header.HeaderWriterFilter@36696821, org.springframework.security.web.authentication.logout.LogoutFilter@47ab3688, com.example.config.JwtAuthenticationFilter@10e4ce98, org.springframework.security.web.session.ConcurrentSessionFilter@5af1b221, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6dc7b7f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1372696b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a491a60, org.springframework.security.web.session.SessionManagementFilter@49741e80, org.springframework.security.web.access.ExceptionTranslationFilter@39921410, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@470866d1]
+2024-04-01 23:08:15 [INFO ] [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-04-01 23:08:15 [INFO ] [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-01 23:08:15 [INFO ] [main] DemoApplication - Started DemoApplication in 4.065 seconds (JVM running for 5.048)
+2024-04-01 23:09:27 [INFO ] [http-nio-8080-exec-2] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-01 23:09:27 [INFO ] [http-nio-8080-exec-2] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-04-01 23:09:27 [INFO ] [http-nio-8080-exec-2] DispatcherServlet - Completed initialization in 555 ms
+2024-04-01 23:14:53 [INFO ] [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 23:14:53 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-01 23:14:53 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-04-01 23:14:56 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 19180 (D:\spring_boot\demo\target\classes started by ADMIN in D:\spring_boot\demo)
+2024-04-01 23:14:56 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 23:14:57 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01 23:14:57 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2024-04-01 23:14:57 [INFO ] [main] GenericScope - BeanFactory id=51b9c6ee-3542-345c-be07-cf936a67cd5f
+2024-04-01 23:14:57 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-04-01 23:14:57 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-01 23:14:57 [INFO ] [main] StandardService - Starting service [Tomcat]
+2024-04-01 23:14:57 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-04-01 23:14:57 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2024-04-01 23:14:57 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1073 ms
+2024-04-01 23:14:57 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01 23:14:57 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-04-01 23:14:58 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-01 23:14:58 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-04-01 23:14:58 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-04-01 23:14:58 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-01 23:14:58 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-01 23:14:58 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 23:14:59 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01 23:14:59 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@79080255, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2cdb53d6, org.springframework.security.web.context.SecurityContextPersistenceFilter@19d3f4fb, org.springframework.security.web.header.HeaderWriterFilter@217009bd, org.springframework.security.web.authentication.logout.LogoutFilter@574e4184, com.example.config.JwtAuthenticationFilter@68e094c9, org.springframework.security.web.session.ConcurrentSessionFilter@2b6ff016, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c1ea00, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3458be63, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62ba3045, org.springframework.security.web.session.SessionManagementFilter@727de450, org.springframework.security.web.access.ExceptionTranslationFilter@29ddaa8e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@62158618]
+2024-04-01 23:14:59 [INFO ] [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-04-01 23:14:59 [INFO ] [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-01 23:14:59 [INFO ] [main] DemoApplication - Started DemoApplication in 3.826 seconds (JVM running for 4.721)
+2024-04-01 23:15:03 [INFO ] [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-01 23:15:03 [INFO ] [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-04-01 23:15:03 [INFO ] [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+2024-04-01 23:32:29 [INFO ] [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 23:32:29 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-01 23:32:29 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-04-01 23:32:49 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 15024 (D:\spring_boot\demo\target\classes started by ADMIN in D:\spring_boot\demo)
+2024-04-01 23:32:49 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 23:32:49 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01 23:32:50 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 3 JPA repository interfaces.
+2024-04-01 23:32:50 [INFO ] [main] GenericScope - BeanFactory id=51b9c6ee-3542-345c-be07-cf936a67cd5f
+2024-04-01 23:32:50 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-04-01 23:32:50 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-01 23:32:50 [INFO ] [main] StandardService - Starting service [Tomcat]
+2024-04-01 23:32:50 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-04-01 23:32:50 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2024-04-01 23:32:50 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1324 ms
+2024-04-01 23:32:50 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01 23:32:50 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-04-01 23:32:51 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-01 23:32:51 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-04-01 23:32:51 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-04-01 23:32:51 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-01 23:32:51 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-01 23:32:52 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 23:32:52 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01 23:32:52 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@85eba52, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a34f8e2, org.springframework.security.web.context.SecurityContextPersistenceFilter@748fa354, org.springframework.security.web.header.HeaderWriterFilter@6f30d0eb, org.springframework.security.web.authentication.logout.LogoutFilter@7ca8f5d7, com.example.config.JwtAuthenticationFilter@49ee3b8d, org.springframework.security.web.session.ConcurrentSessionFilter@139b3a29, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e6f1f48, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@574e4184, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@222a7429, org.springframework.security.web.session.SessionManagementFilter@7827cdfc, org.springframework.security.web.access.ExceptionTranslationFilter@3fe3ebb3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a906078]
+2024-04-01 23:32:53 [INFO ] [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-04-01 23:32:53 [INFO ] [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-01 23:32:53 [INFO ] [main] DemoApplication - Started DemoApplication in 4.489 seconds (JVM running for 5.542)
+2024-04-01 23:34:58 [INFO ] [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 23:34:58 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-01 23:34:58 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-04-01 23:35:04 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 9576 (D:\spring_boot\demo\target\classes started by ADMIN in D:\spring_boot\demo)
+2024-04-01 23:35:04 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 23:35:05 [INFO ] [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-01 23:35:05 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01 23:35:05 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 3 JPA repository interfaces.
+2024-04-01 23:35:05 [INFO ] [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-01 23:35:05 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-04-01 23:35:05 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 0 ms. Found 0 MongoDB repository interfaces.
+2024-04-01 23:35:05 [INFO ] [main] GenericScope - BeanFactory id=f7f615a5-7bb9-3df4-8ba5-3351dfa884d3
+2024-04-01 23:35:05 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-04-01 23:35:05 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-01 23:35:05 [INFO ] [main] StandardService - Starting service [Tomcat]
+2024-04-01 23:35:05 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-04-01 23:35:05 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2024-04-01 23:35:05 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1120 ms
+2024-04-01 23:35:05 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01 23:35:06 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-04-01 23:35:06 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-01 23:35:06 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-04-01 23:35:06 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-04-01 23:35:06 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-01 23:35:06 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-01 23:35:06 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 23:35:07 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01 23:35:07 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@279e85eb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4cb59398, org.springframework.security.web.context.SecurityContextPersistenceFilter@6fe91918, org.springframework.security.web.header.HeaderWriterFilter@2e88ad38, org.springframework.security.web.authentication.logout.LogoutFilter@20ad64c, com.example.config.JwtAuthenticationFilter@6018d82c, org.springframework.security.web.session.ConcurrentSessionFilter@2389f546, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f5b4ca6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1512efe9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22cf1808, org.springframework.security.web.session.SessionManagementFilter@2165d4ab, org.springframework.security.web.access.ExceptionTranslationFilter@474deb4c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@188b9a1e]
+2024-04-01 23:35:07 [INFO ] [main] client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.17+10-LTS-269"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@627cb3ed]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-04-01 23:35:07 [INFO ] [cluster-ClusterId{value='660ae23bf08d4e02671a42e1', description='null'}-localhost:27017] connection - Opened connection [connectionId{localValue:1, serverValue:16}] to localhost:27017
+2024-04-01 23:35:07 [INFO ] [cluster-rtt-ClusterId{value='660ae23bf08d4e02671a42e1', description='null'}-localhost:27017] connection - Opened connection [connectionId{localValue:2, serverValue:15}] to localhost:27017
+2024-04-01 23:35:07 [INFO ] [cluster-ClusterId{value='660ae23bf08d4e02671a42e1', description='null'}-localhost:27017] cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=78750200}
+2024-04-01 23:35:08 [INFO ] [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-04-01 23:35:08 [INFO ] [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-01 23:35:08 [INFO ] [main] DemoApplication - Started DemoApplication in 4.137 seconds (JVM running for 4.994)
+2024-04-01 23:35:43 [INFO ] [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 23:35:43 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-01 23:35:43 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-04-01 23:35:48 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 10924 (D:\spring_boot\demo\target\classes started by ADMIN in D:\spring_boot\demo)
+2024-04-01 23:35:48 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 23:35:48 [INFO ] [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-01 23:35:48 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01 23:35:48 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 3 JPA repository interfaces.
+2024-04-01 23:35:48 [INFO ] [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-01 23:35:48 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-04-01 23:35:48 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 0 ms. Found 0 MongoDB repository interfaces.
+2024-04-01 23:35:48 [INFO ] [main] GenericScope - BeanFactory id=f7f615a5-7bb9-3df4-8ba5-3351dfa884d3
+2024-04-01 23:35:49 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-04-01 23:35:49 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-01 23:35:49 [INFO ] [main] StandardService - Starting service [Tomcat]
+2024-04-01 23:35:49 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-04-01 23:35:49 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2024-04-01 23:35:49 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1134 ms
+2024-04-01 23:35:49 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01 23:35:49 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-04-01 23:35:49 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-01 23:35:49 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-04-01 23:35:49 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-04-01 23:35:49 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-01 23:35:50 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-01 23:35:50 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 23:35:50 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01 23:35:50 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5c7d675c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64836643, org.springframework.security.web.context.SecurityContextPersistenceFilter@530a46f4, org.springframework.security.web.header.HeaderWriterFilter@71c1ca1, org.springframework.security.web.authentication.logout.LogoutFilter@4d529bc0, com.example.config.JwtAuthenticationFilter@10f192d8, org.springframework.security.web.session.ConcurrentSessionFilter@6f9b5f01, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62376bdd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@474deb4c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@981d9d2, org.springframework.security.web.session.SessionManagementFilter@470ad01c, org.springframework.security.web.access.ExceptionTranslationFilter@619b7436, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@129348e8]
+2024-04-01 23:35:51 [INFO ] [main] client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.17+10-LTS-269"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@20843604]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-04-01 23:35:51 [INFO ] [cluster-ClusterId{value='660ae267c366a77cfdcb8fc3', description='null'}-localhost:27017] connection - Opened connection [connectionId{localValue:1, serverValue:17}] to localhost:27017
+2024-04-01 23:35:51 [INFO ] [cluster-rtt-ClusterId{value='660ae267c366a77cfdcb8fc3', description='null'}-localhost:27017] connection - Opened connection [connectionId{localValue:2, serverValue:18}] to localhost:27017
+2024-04-01 23:35:51 [INFO ] [cluster-ClusterId{value='660ae267c366a77cfdcb8fc3', description='null'}-localhost:27017] cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=18850100}
+2024-04-01 23:35:51 [INFO ] [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-04-01 23:35:51 [INFO ] [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-01 23:35:51 [INFO ] [main] DemoApplication - Started DemoApplication in 4.184 seconds (JVM running for 5.26)
+2024-04-01 23:39:27 [INFO ] [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 23:39:27 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-01 23:39:27 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-04-01 23:39:31 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 10556 (D:\spring_boot\demo\target\classes started by ADMIN in D:\spring_boot\demo)
+2024-04-01 23:39:31 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 23:39:32 [INFO ] [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-01 23:39:32 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01 23:39:32 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.repo.DemoRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2024-04-01 23:39:32 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 3 JPA repository interfaces.
+2024-04-01 23:39:32 [INFO ] [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-01 23:39:32 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-04-01 23:39:32 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 0 ms. Found 0 MongoDB repository interfaces.
+2024-04-01 23:39:32 [INFO ] [main] GenericScope - BeanFactory id=f7f615a5-7bb9-3df4-8ba5-3351dfa884d3
+2024-04-01 23:39:32 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-04-01 23:39:32 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-01 23:39:32 [INFO ] [main] StandardService - Starting service [Tomcat]
+2024-04-01 23:39:32 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-04-01 23:39:32 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2024-04-01 23:39:32 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1129 ms
+2024-04-01 23:39:32 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01 23:39:32 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-04-01 23:39:33 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-01 23:39:33 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-04-01 23:39:33 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-04-01 23:39:33 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-01 23:39:33 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-01 23:39:33 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 23:39:34 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01 23:39:34 [WARN ] [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'demoController' defined in file [D:\spring_boot\demo\target\classes\com\example\controller\DemoController.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.repo.DemoRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-04-01 23:39:34 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 23:39:34 [INFO ] [main] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-01 23:39:34 [INFO ] [main] HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-04-01 23:39:34 [INFO ] [main] StandardService - Stopping service [Tomcat]
+2024-04-01 23:39:34 [INFO ] [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-04-01 23:39:34 [ERROR] [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.example.controller.DemoController required a bean of type 'com.example.repo.DemoRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.repo.DemoRepository' in your configuration.
+
+2024-04-01 23:40:09 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 1652 (D:\spring_boot\demo\target\classes started by ADMIN in D:\spring_boot\demo)
+2024-04-01 23:40:09 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 23:40:09 [INFO ] [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-01 23:40:09 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01 23:40:09 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.repo.DemoRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2024-04-01 23:40:09 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2024-04-01 23:40:09 [INFO ] [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-01 23:40:09 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-04-01 23:40:09 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 0 ms. Found 0 MongoDB repository interfaces.
+2024-04-01 23:40:09 [INFO ] [main] GenericScope - BeanFactory id=f7f615a5-7bb9-3df4-8ba5-3351dfa884d3
+2024-04-01 23:40:10 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-04-01 23:40:10 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-01 23:40:10 [INFO ] [main] StandardService - Starting service [Tomcat]
+2024-04-01 23:40:10 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-04-01 23:40:10 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2024-04-01 23:40:10 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1152 ms
+2024-04-01 23:40:10 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01 23:40:10 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-04-01 23:40:10 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-01 23:40:10 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-04-01 23:40:10 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-04-01 23:40:10 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-01 23:40:11 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-01 23:40:11 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 23:40:11 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01 23:40:11 [WARN ] [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'demoController' defined in file [D:\spring_boot\demo\target\classes\com\example\controller\DemoController.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.repo.DemoRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-04-01 23:40:11 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01 23:40:11 [INFO ] [main] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-01 23:40:11 [INFO ] [main] HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-04-01 23:40:11 [INFO ] [main] StandardService - Stopping service [Tomcat]
+2024-04-01 23:40:11 [INFO ] [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-04-01 23:40:11 [ERROR] [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.example.controller.DemoController required a bean of type 'com.example.repo.DemoRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.repo.DemoRepository' in your configuration.
+
+2024-04-01 23:47:14 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 13012 (D:\spring_boot\demo\target\classes started by ADMIN in D:\spring_boot\demo)
+2024-04-01 23:47:14 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-01 23:47:15 [INFO ] [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-01 23:47:15 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01 23:47:15 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.repo.DemoRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2024-04-01 23:47:15 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 3 JPA repository interfaces.
+2024-04-01 23:47:15 [INFO ] [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-01 23:47:15 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-04-01 23:47:15 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.repo.AddressRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository

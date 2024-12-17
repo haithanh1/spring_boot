@@ -1,0 +1,546 @@
+2024-04-14 23:14:50 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-04-14 23:14:50 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2024-04-14 23:14:50 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1360 ms
+2024-04-14 23:14:50 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-14 23:14:50 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-04-14 23:14:50 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-14 23:14:51 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-04-14 23:14:51 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-04-14 23:14:51 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-14 23:14:51 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-14 23:14:51 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-14 23:14:52 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-14 23:14:52 [INFO ] [main] client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.17+10-LTS-269"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@62536882]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-04-14 23:14:52 [INFO ] [cluster-ClusterId{value='661c00fc0c300045d60eef1e', description='null'}-localhost:27017] connection - Opened connection [connectionId{localValue:1, serverValue:158}] to localhost:27017
+2024-04-14 23:14:52 [INFO ] [cluster-rtt-ClusterId{value='661c00fc0c300045d60eef1e', description='null'}-localhost:27017] connection - Opened connection [connectionId{localValue:2, serverValue:157}] to localhost:27017
+2024-04-14 23:14:52 [INFO ] [cluster-ClusterId{value='661c00fc0c300045d60eef1e', description='null'}-localhost:27017] cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=18063400}
+2024-04-14 23:14:52 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:14:52 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='swagger-ui/**']
+2024-04-14 23:14:52 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='swagger-ui**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:14:52 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='swagger-ui**']
+2024-04-14 23:14:52 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:14:52 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs/**']
+2024-04-14 23:14:52 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:14:52 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs**']
+2024-04-14 23:14:52 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4f67d628, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ef2f84c, org.springframework.security.web.context.SecurityContextPersistenceFilter@362109d0, org.springframework.security.web.header.HeaderWriterFilter@36b6802f, org.springframework.security.web.authentication.logout.LogoutFilter@2292e793, com.example.config.JwtAuthenticationFilter@6d70e68b, org.springframework.security.web.session.ConcurrentSessionFilter@4caca86d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3670af2b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4fd8aefe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14f8fdae, org.springframework.security.web.session.SessionManagementFilter@5275d709, org.springframework.security.web.access.ExceptionTranslationFilter@2acfd27b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@644eed73]
+2024-04-14 23:14:53 [INFO ] [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-04-14 23:14:53 [INFO ] [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-14 23:14:53 [INFO ] [main] DemoApplication - Started DemoApplication in 4.676 seconds (JVM running for 5.525)
+2024-04-14 23:14:58 [INFO ] [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-14 23:14:58 [INFO ] [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-04-14 23:14:58 [INFO ] [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 2 ms
+2024-04-14 23:15:26 [INFO ] [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-14 23:15:26 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-14 23:15:26 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-04-14 23:15:30 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 3520 (D:\spring_boot\demo\target\classes started by ADMIN in D:\spring_boot\demo)
+2024-04-14 23:15:31 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-14 23:15:31 [INFO ] [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-14 23:15:31 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-14 23:15:31 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.repo.DemoRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2024-04-14 23:15:31 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2024-04-14 23:15:31 [INFO ] [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-14 23:15:31 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-04-14 23:15:31 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.repo.AddressRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-04-14 23:15:31 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.repo.StaffRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-04-14 23:15:31 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.repo.StoreRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-04-14 23:15:31 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 1 MongoDB repository interfaces.
+2024-04-14 23:15:31 [INFO ] [main] GenericScope - BeanFactory id=c1ffb35c-7e11-3a54-872c-76b3f1de5a68
+2024-04-14 23:15:32 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-04-14 23:15:32 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-14 23:15:32 [INFO ] [main] StandardService - Starting service [Tomcat]
+2024-04-14 23:15:32 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-04-14 23:15:32 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2024-04-14 23:15:32 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1352 ms
+2024-04-14 23:15:32 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-14 23:15:32 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-04-14 23:15:32 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-14 23:15:32 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-04-14 23:15:32 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-04-14 23:15:32 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-14 23:15:33 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-14 23:15:33 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-14 23:15:33 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-14 23:15:33 [INFO ] [main] client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.17+10-LTS-269"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@6915351c]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-04-14 23:15:34 [INFO ] [cluster-rtt-ClusterId{value='661c0125a0d19a2a6622c7d8', description='null'}-localhost:27017] connection - Opened connection [connectionId{localValue:1, serverValue:160}] to localhost:27017
+2024-04-14 23:15:34 [INFO ] [cluster-ClusterId{value='661c0125a0d19a2a6622c7d8', description='null'}-localhost:27017] connection - Opened connection [connectionId{localValue:2, serverValue:159}] to localhost:27017
+2024-04-14 23:15:34 [INFO ] [cluster-ClusterId{value='661c0125a0d19a2a6622c7d8', description='null'}-localhost:27017] cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=17509500}
+2024-04-14 23:15:34 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:15:34 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/**']
+2024-04-14 23:15:34 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='swagger-ui**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:15:34 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='swagger-ui**']
+2024-04-14 23:15:34 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:15:34 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs/**']
+2024-04-14 23:15:34 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:15:34 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs**']
+2024-04-14 23:15:34 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:15:34 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/']
+2024-04-14 23:15:34 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2591477f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@761d3c20, org.springframework.security.web.context.SecurityContextPersistenceFilter@4e6881e, org.springframework.security.web.header.HeaderWriterFilter@5a63de07, org.springframework.security.web.authentication.logout.LogoutFilter@5232cec1, com.example.config.JwtAuthenticationFilter@c5e7696, org.springframework.security.web.session.ConcurrentSessionFilter@39240aa3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76d654, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36b6802f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@172f2717, org.springframework.security.web.session.SessionManagementFilter@5207747c, org.springframework.security.web.access.ExceptionTranslationFilter@68d1f4e2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54c2cfc9]
+2024-04-14 23:15:35 [INFO ] [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-04-14 23:15:35 [INFO ] [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-14 23:15:35 [INFO ] [main] DemoApplication - Started DemoApplication in 4.901 seconds (JVM running for 5.903)
+2024-04-14 23:15:35 [INFO ] [http-nio-8080-exec-3] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-14 23:15:35 [INFO ] [http-nio-8080-exec-3] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-04-14 23:15:35 [INFO ] [http-nio-8080-exec-3] DispatcherServlet - Completed initialization in 1 ms
+2024-04-14 23:18:09 [INFO ] [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-14 23:18:09 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-14 23:18:09 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-04-14 23:18:14 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 14236 (D:\spring_boot\demo\target\classes started by ADMIN in D:\spring_boot\demo)
+2024-04-14 23:18:14 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-14 23:18:14 [INFO ] [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-14 23:18:14 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-14 23:18:15 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.repo.DemoRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2024-04-14 23:18:15 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 3 JPA repository interfaces.
+2024-04-14 23:18:15 [INFO ] [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-14 23:18:15 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-04-14 23:18:15 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.repo.AddressRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-04-14 23:18:15 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.repo.StaffRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-04-14 23:18:15 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.repo.StoreRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-04-14 23:18:15 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 MongoDB repository interfaces.
+2024-04-14 23:18:15 [INFO ] [main] GenericScope - BeanFactory id=c1ffb35c-7e11-3a54-872c-76b3f1de5a68
+2024-04-14 23:18:15 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-04-14 23:18:15 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-14 23:18:15 [INFO ] [main] StandardService - Starting service [Tomcat]
+2024-04-14 23:18:15 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-04-14 23:18:15 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2024-04-14 23:18:15 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1340 ms
+2024-04-14 23:18:15 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-14 23:18:15 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-04-14 23:18:16 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-14 23:18:16 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-04-14 23:18:16 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-04-14 23:18:16 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-14 23:18:16 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-14 23:18:16 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-14 23:18:17 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-14 23:18:17 [INFO ] [main] client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.17+10-LTS-269"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@6915351c]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-04-14 23:18:17 [INFO ] [cluster-rtt-ClusterId{value='661c01c9d3020372b84388e8', description='null'}-localhost:27017] connection - Opened connection [connectionId{localValue:1, serverValue:161}] to localhost:27017
+2024-04-14 23:18:17 [INFO ] [cluster-ClusterId{value='661c01c9d3020372b84388e8', description='null'}-localhost:27017] connection - Opened connection [connectionId{localValue:2, serverValue:162}] to localhost:27017
+2024-04-14 23:18:17 [INFO ] [cluster-ClusterId{value='661c01c9d3020372b84388e8', description='null'}-localhost:27017] cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=17953400}
+2024-04-14 23:18:17 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:18:17 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/**']
+2024-04-14 23:18:17 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='swagger-ui**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:18:17 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='swagger-ui**']
+2024-04-14 23:18:17 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:18:17 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs/**']
+2024-04-14 23:18:17 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:18:17 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs**']
+2024-04-14 23:18:17 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:18:17 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/']
+2024-04-14 23:18:18 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2591477f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@761d3c20, org.springframework.security.web.context.SecurityContextPersistenceFilter@4e6881e, org.springframework.security.web.header.HeaderWriterFilter@5a63de07, org.springframework.security.web.authentication.logout.LogoutFilter@5232cec1, com.example.config.JwtAuthenticationFilter@c5e7696, org.springframework.security.web.session.ConcurrentSessionFilter@39240aa3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76d654, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36b6802f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@172f2717, org.springframework.security.web.session.SessionManagementFilter@5207747c, org.springframework.security.web.access.ExceptionTranslationFilter@68d1f4e2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54c2cfc9]
+2024-04-14 23:18:18 [INFO ] [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-04-14 23:18:18 [INFO ] [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-14 23:18:18 [INFO ] [main] DemoApplication - Started DemoApplication in 4.804 seconds (JVM running for 5.84)
+2024-04-14 23:18:28 [INFO ] [http-nio-8080-exec-4] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-14 23:18:28 [INFO ] [http-nio-8080-exec-4] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-04-14 23:18:28 [INFO ] [http-nio-8080-exec-4] DispatcherServlet - Completed initialization in 1 ms
+2024-04-14 23:20:51 [INFO ] [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-14 23:20:51 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-14 23:20:51 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-04-14 23:20:55 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 7508 (D:\spring_boot\demo\target\classes started by ADMIN in D:\spring_boot\demo)
+2024-04-14 23:20:55 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-14 23:20:56 [INFO ] [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-14 23:20:56 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-14 23:20:56 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.repo.DemoRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2024-04-14 23:20:56 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 3 JPA repository interfaces.
+2024-04-14 23:20:56 [INFO ] [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-14 23:20:56 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-04-14 23:20:56 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.repo.AddressRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-04-14 23:20:56 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.repo.StaffRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-04-14 23:20:56 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.repo.StoreRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-04-14 23:20:56 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 MongoDB repository interfaces.
+2024-04-14 23:20:56 [INFO ] [main] GenericScope - BeanFactory id=c1ffb35c-7e11-3a54-872c-76b3f1de5a68
+2024-04-14 23:20:56 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-04-14 23:20:56 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-14 23:20:56 [INFO ] [main] StandardService - Starting service [Tomcat]
+2024-04-14 23:20:56 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-04-14 23:20:57 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2024-04-14 23:20:57 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1231 ms
+2024-04-14 23:20:57 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-14 23:20:57 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-04-14 23:20:57 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-14 23:20:57 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-04-14 23:20:57 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-04-14 23:20:57 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-14 23:20:57 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-14 23:20:57 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-14 23:20:58 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-14 23:20:58 [INFO ] [main] client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.17+10-LTS-269"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@18711946]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-04-14 23:20:58 [INFO ] [cluster-ClusterId{value='661c026a334c6238bcb8a726', description='null'}-localhost:27017] connection - Opened connection [connectionId{localValue:2, serverValue:163}] to localhost:27017
+2024-04-14 23:20:58 [INFO ] [cluster-rtt-ClusterId{value='661c026a334c6238bcb8a726', description='null'}-localhost:27017] connection - Opened connection [connectionId{localValue:1, serverValue:164}] to localhost:27017
+2024-04-14 23:20:58 [INFO ] [cluster-ClusterId{value='661c026a334c6238bcb8a726', description='null'}-localhost:27017] cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=17894200}
+2024-04-14 23:20:58 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:20:58 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/**']
+2024-04-14 23:20:58 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='swagger-ui**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:20:58 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='swagger-ui**']
+2024-04-14 23:20:58 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:20:58 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs/**']
+2024-04-14 23:20:58 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:20:58 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs**']
+2024-04-14 23:20:58 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:20:58 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/']
+2024-04-14 23:20:58 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@68e8bbab, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5dfaa2f0, org.springframework.security.web.context.SecurityContextPersistenceFilter@f359e65, org.springframework.security.web.header.HeaderWriterFilter@8c54f48, org.springframework.security.web.csrf.CsrfFilter@537fb7bf, org.springframework.security.web.authentication.logout.LogoutFilter@57e9cd2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2812368, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8eda949, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@672ba9cc, org.springframework.security.web.session.SessionManagementFilter@48a32c4f, org.springframework.security.web.access.ExceptionTranslationFilter@3fb54673]
+2024-04-14 23:20:59 [INFO ] [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-04-14 23:20:59 [INFO ] [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-14 23:20:59 [INFO ] [main] DemoApplication - Started DemoApplication in 4.286 seconds (JVM running for 5.297)
+2024-04-14 23:21:07 [INFO ] [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-14 23:21:07 [INFO ] [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-04-14 23:21:07 [INFO ] [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+2024-04-14 23:21:14 [ERROR] [http-nio-8080-exec-2] [dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Cannot call sendError() after the response has been committed] with root cause
+java.lang.IllegalStateException: Cannot call sendError() after the response has been committed
+	at org.apache.catalina.connector.ResponseFacade.sendError(ResponseFacade.java:472) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at javax.servlet.http.HttpServletResponseWrapper.sendError(HttpServletResponseWrapper.java:129) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:561) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at com.example.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:56) ~[classes/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214) ~[spring-security-web-5.7.7.jar:5.7.7]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186) ~[spring-security-web-5.7.7.jar:5.7.7]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+2024-04-14 23:21:46 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 14768 (D:\spring_boot\demo\target\classes started by ADMIN in D:\spring_boot\demo)
+2024-04-14 23:21:46 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-14 23:21:46 [INFO ] [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-14 23:21:46 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-14 23:21:46 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.repo.DemoRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2024-04-14 23:21:46 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 3 JPA repository interfaces.
+2024-04-14 23:21:46 [INFO ] [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-14 23:21:46 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-04-14 23:21:46 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.repo.AddressRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-04-14 23:21:46 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.repo.StaffRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-04-14 23:21:46 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.repo.StoreRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-04-14 23:21:46 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 1 MongoDB repository interfaces.
+2024-04-14 23:21:47 [INFO ] [main] GenericScope - BeanFactory id=c1ffb35c-7e11-3a54-872c-76b3f1de5a68
+2024-04-14 23:21:47 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-04-14 23:21:47 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-14 23:21:47 [INFO ] [main] StandardService - Starting service [Tomcat]
+2024-04-14 23:21:47 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-04-14 23:21:47 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2024-04-14 23:21:47 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1354 ms
+2024-04-14 23:21:47 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-14 23:21:47 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-04-14 23:21:47 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-14 23:21:47 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-04-14 23:21:48 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-04-14 23:21:48 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-14 23:21:48 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-14 23:21:48 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-14 23:21:48 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-14 23:21:49 [INFO ] [main] client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.17+10-LTS-269"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@4cbd17b3]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-04-14 23:21:49 [INFO ] [cluster-rtt-ClusterId{value='661c029d7b57d87fa51de877', description='null'}-localhost:27017] connection - Opened connection [connectionId{localValue:2, serverValue:165}] to localhost:27017
+2024-04-14 23:21:49 [INFO ] [cluster-ClusterId{value='661c029d7b57d87fa51de877', description='null'}-localhost:27017] connection - Opened connection [connectionId{localValue:1, serverValue:166}] to localhost:27017
+2024-04-14 23:21:49 [INFO ] [cluster-ClusterId{value='661c029d7b57d87fa51de877', description='null'}-localhost:27017] cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=18482300}
+2024-04-14 23:21:49 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:21:49 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/**']
+2024-04-14 23:21:49 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='swagger-ui**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:21:49 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='swagger-ui**']
+2024-04-14 23:21:49 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:21:49 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs/**']
+2024-04-14 23:21:49 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:21:49 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs**']
+2024-04-14 23:21:49 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:21:49 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/']
+2024-04-14 23:21:49 [WARN ] [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.IllegalStateException: At least one mapping is required (i.e. authorizeRequests().anyRequest().authenticated())
+2024-04-14 23:21:49 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-14 23:21:49 [INFO ] [main] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-14 23:21:49 [INFO ] [main] HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-04-14 23:21:49 [INFO ] [main] StandardService - Stopping service [Tomcat]
+2024-04-14 23:21:49 [INFO ] [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-04-14 23:21:49 [ERROR] [main] SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.IllegalStateException: At least one mapping is required (i.e. authorizeRequests().anyRequest().authenticated())
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:23) ~[classes/:?]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.IllegalStateException: At least one mapping is required (i.e. authorizeRequests().anyRequest().authenticated())
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 21 more
+Caused by: java.lang.IllegalStateException: At least one mapping is required (i.e. authorizeRequests().anyRequest().authenticated())
+	at org.springframework.util.Assert.state(Assert.java:76) ~[spring-core-5.3.25.jar:5.3.25]
+	at org.springframework.security.config.annotation.web.configurers.ExpressionUrlAuthorizationConfigurer.createMetadataSource(ExpressionUrlAuthorizationConfigurer.java:154) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at org.springframework.security.config.annotation.web.configurers.ExpressionUrlAuthorizationConfigurer.createMetadataSource(ExpressionUrlAuthorizationConfigurer.java:83) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at org.springframework.security.config.annotation.web.configurers.AbstractInterceptUrlConfigurer.configure(AbstractInterceptUrlConfigurer.java:76) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at org.springframework.security.config.annotation.web.configurers.AbstractInterceptUrlConfigurer.configure(AbstractInterceptUrlConfigurer.java:64) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.configure(AbstractConfiguredSecurityBuilder.java:349) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:303) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:38) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at org.springframework.security.config.annotation.web.builders.WebSecurity.performBuild(WebSecurity.java:313) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at org.springframework.security.config.annotation.web.builders.WebSecurity.performBuild(WebSecurity.java:88) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:305) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:38) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.springSecurityFilterChain(WebSecurityConfiguration.java:125) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 21 more
+2024-04-14 23:22:05 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 7072 (D:\spring_boot\demo\target\classes started by ADMIN in D:\spring_boot\demo)
+2024-04-14 23:22:05 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-14 23:22:05 [INFO ] [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-14 23:22:05 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-14 23:22:05 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.repo.DemoRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2024-04-14 23:22:05 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+2024-04-14 23:22:05 [INFO ] [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-14 23:22:05 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-04-14 23:22:05 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.repo.AddressRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-04-14 23:22:05 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.repo.StaffRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-04-14 23:22:05 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.repo.StoreRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-04-14 23:22:05 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 1 MongoDB repository interfaces.
+2024-04-14 23:22:06 [INFO ] [main] GenericScope - BeanFactory id=c1ffb35c-7e11-3a54-872c-76b3f1de5a68
+2024-04-14 23:22:06 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-04-14 23:22:06 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-14 23:22:06 [INFO ] [main] StandardService - Starting service [Tomcat]
+2024-04-14 23:22:06 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-04-14 23:22:06 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2024-04-14 23:22:06 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1335 ms
+2024-04-14 23:22:06 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-14 23:22:06 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-04-14 23:22:06 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-14 23:22:06 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-04-14 23:22:07 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-04-14 23:22:07 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-14 23:22:07 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-14 23:22:07 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-14 23:22:07 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-14 23:22:08 [INFO ] [main] client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.17+10-LTS-269"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@6915351c]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-04-14 23:22:08 [INFO ] [cluster-ClusterId{value='661c02afe87b097a6e58f37c', description='null'}-localhost:27017] connection - Opened connection [connectionId{localValue:1, serverValue:168}] to localhost:27017
+2024-04-14 23:22:08 [INFO ] [cluster-rtt-ClusterId{value='661c02afe87b097a6e58f37c', description='null'}-localhost:27017] connection - Opened connection [connectionId{localValue:2, serverValue:167}] to localhost:27017
+2024-04-14 23:22:08 [INFO ] [cluster-ClusterId{value='661c02afe87b097a6e58f37c', description='null'}-localhost:27017] cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=17094800}
+2024-04-14 23:22:08 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:22:08 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/**']
+2024-04-14 23:22:08 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='swagger-ui**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:22:08 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='swagger-ui**']
+2024-04-14 23:22:08 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:22:08 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs/**']
+2024-04-14 23:22:08 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:22:08 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs**']
+2024-04-14 23:22:08 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:22:08 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/']
+2024-04-14 23:22:08 [WARN ] [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.IllegalStateException: At least one mapping is required (i.e. authorizeRequests().anyRequest().authenticated())
+2024-04-14 23:22:08 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-14 23:22:08 [INFO ] [main] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-14 23:22:08 [INFO ] [main] HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-04-14 23:22:08 [INFO ] [main] StandardService - Stopping service [Tomcat]
+2024-04-14 23:22:08 [INFO ] [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-04-14 23:22:08 [ERROR] [main] SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.IllegalStateException: At least one mapping is required (i.e. authorizeRequests().anyRequest().authenticated())
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:23) ~[classes/:?]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.IllegalStateException: At least one mapping is required (i.e. authorizeRequests().anyRequest().authenticated())
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 21 more
+Caused by: java.lang.IllegalStateException: At least one mapping is required (i.e. authorizeRequests().anyRequest().authenticated())
+	at org.springframework.util.Assert.state(Assert.java:76) ~[spring-core-5.3.25.jar:5.3.25]
+	at org.springframework.security.config.annotation.web.configurers.ExpressionUrlAuthorizationConfigurer.createMetadataSource(ExpressionUrlAuthorizationConfigurer.java:154) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at org.springframework.security.config.annotation.web.configurers.ExpressionUrlAuthorizationConfigurer.createMetadataSource(ExpressionUrlAuthorizationConfigurer.java:83) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at org.springframework.security.config.annotation.web.configurers.AbstractInterceptUrlConfigurer.configure(AbstractInterceptUrlConfigurer.java:76) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at org.springframework.security.config.annotation.web.configurers.AbstractInterceptUrlConfigurer.configure(AbstractInterceptUrlConfigurer.java:64) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.configure(AbstractConfiguredSecurityBuilder.java:349) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:303) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:38) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at org.springframework.security.config.annotation.web.builders.WebSecurity.performBuild(WebSecurity.java:313) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at org.springframework.security.config.annotation.web.builders.WebSecurity.performBuild(WebSecurity.java:88) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:305) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:38) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.springSecurityFilterChain(WebSecurityConfiguration.java:125) ~[spring-security-config-5.7.7.jar:5.7.7]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 21 more
+2024-04-14 23:22:29 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 3520 (D:\spring_boot\demo\target\classes started by ADMIN in D:\spring_boot\demo)
+2024-04-14 23:22:29 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-14 23:22:30 [INFO ] [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-14 23:22:30 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-14 23:22:30 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.repo.DemoRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2024-04-14 23:22:30 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2024-04-14 23:22:30 [INFO ] [main] RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-14 23:22:30 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-04-14 23:22:30 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.repo.AddressRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-04-14 23:22:30 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.repo.StaffRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-04-14 23:22:30 [INFO ] [main] RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.repo.StoreRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-04-14 23:22:30 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 MongoDB repository interfaces.
+2024-04-14 23:22:30 [INFO ] [main] GenericScope - BeanFactory id=c1ffb35c-7e11-3a54-872c-76b3f1de5a68
+2024-04-14 23:22:30 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-04-14 23:22:30 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-14 23:22:30 [INFO ] [main] StandardService - Starting service [Tomcat]
+2024-04-14 23:22:30 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-04-14 23:22:31 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2024-04-14 23:22:31 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1400 ms
+2024-04-14 23:22:31 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-14 23:22:31 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-04-14 23:22:31 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-14 23:22:31 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-04-14 23:22:31 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-04-14 23:22:31 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-14 23:22:32 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-14 23:22:32 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-14 23:22:32 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-14 23:22:32 [INFO ] [main] client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.17+10-LTS-269"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@4cbd17b3]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-04-14 23:22:32 [INFO ] [cluster-rtt-ClusterId{value='661c02c85c4c5412e43c9134', description='null'}-localhost:27017] connection - Opened connection [connectionId{localValue:2, serverValue:169}] to localhost:27017
+2024-04-14 23:22:32 [INFO ] [cluster-ClusterId{value='661c02c85c4c5412e43c9134', description='null'}-localhost:27017] connection - Opened connection [connectionId{localValue:1, serverValue:170}] to localhost:27017
+2024-04-14 23:22:32 [INFO ] [cluster-ClusterId{value='661c02c85c4c5412e43c9134', description='null'}-localhost:27017] cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=18609500}
+2024-04-14 23:22:33 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:22:33 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/**']
+2024-04-14 23:22:33 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='swagger-ui**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:22:33 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='swagger-ui**']
+2024-04-14 23:22:33 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:22:33 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs/**']
+2024-04-14 23:22:33 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/v3/api-docs**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:22:33 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/v3/api-docs**']
+2024-04-14 23:22:33 [WARN ] [main] WebSecurity - You are asking Spring Security to ignore Ant [pattern='/swagger-ui/']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-14 23:22:33 [INFO ] [main] DefaultSecurityFilterChain - Will not secure Ant [pattern='/swagger-ui/']
+2024-04-14 23:22:33 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2b43eb71, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f32fe68, org.springframework.security.web.context.SecurityContextPersistenceFilter@68596992, org.springframework.security.web.header.HeaderWriterFilter@42d65ffc, org.springframework.security.web.authentication.logout.LogoutFilter@5e8359da, com.example.config.JwtAuthenticationFilter@81a56b2, org.springframework.security.web.session.ConcurrentSessionFilter@c53c04e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@66d62c59, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c541b00, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1007954a, org.springframework.security.web.session.SessionManagementFilter@2a5917f6, org.springframework.security.web.access.ExceptionTranslationFilter@40ff56f7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4fd8aefe]
+2024-04-14 23:22:33 [INFO ] [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-04-14 23:22:33 [INFO ] [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-14 23:22:33 [INFO ] [main] DemoApplication - Started DemoApplication in 4.902 seconds (JVM running for 5.789)
+2024-04-14 23:22:37 [INFO ] [http-nio-8080-exec-2] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-14 23:22:37 [INFO ] [http-nio-8080-exec-2] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-04-14 23:22:37 [INFO ] [http-nio-8080-exec-2] DispatcherServlet - Completed initialization in 1 ms
+2024-04-14 23:22:37 [ERROR] [http-nio-8080-exec-2] [dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Cannot call sendError() after the response has been committed] with root cause
+java.lang.IllegalStateException: Cannot call sendError() after the response has been committed
+	at org.apache.catalina.connector.ResponseFacade.sendError(ResponseFacade.java:472) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at javax.servlet.http.HttpServletResponseWrapper.sendError(HttpServletResponseWrapper.java:129) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:561) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at com.example.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:56) ~[classes/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214) ~[spring-security-web-5.7.7.jar:5.7.7]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186) ~[spring-security-web-5.7.7.jar:5.7.7]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]

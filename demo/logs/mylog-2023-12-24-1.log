@@ -1,0 +1,951 @@
+2023-12-23 23:22:36 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 6736 (D:\demo (9)\demo\target\classes started by ADMIN in D:\demo (9)\demo)
+2023-12-23 23:22:36 [INFO ] [main] DemoApplication - The following 1 profile is active: "docker"
+2023-12-23 23:22:37 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-23 23:22:37 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 3 JPA repository interfaces.
+2023-12-23 23:22:37 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-12-23 23:22:37 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-23 23:22:37 [INFO ] [main] StandardService - Starting service [Tomcat]
+2023-12-23 23:22:37 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-12-23 23:22:37 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2023-12-23 23:22:37 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1077 ms
+2023-12-23 23:22:37 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-23 23:22:37 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-12-23 23:22:38 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-23 23:22:38 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2023-12-23 23:22:43 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2023-12-23 23:22:43 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-12-23 23:22:43 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-23 23:22:43 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-23 23:22:44 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-23 23:22:45 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@344cf00f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@598ff2b3, org.springframework.security.web.context.SecurityContextPersistenceFilter@677274e7, org.springframework.security.web.header.HeaderWriterFilter@1d6dc2b8, org.springframework.security.web.authentication.logout.LogoutFilter@7205a8b7, com.example.config.JwtAuthenticationFilter@62ff14cd, org.springframework.security.web.session.ConcurrentSessionFilter@535b4dbf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16279a5d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d387e9b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1002f859, org.springframework.security.web.session.SessionManagementFilter@457d3f54, org.springframework.security.web.access.ExceptionTranslationFilter@96448ee, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e3a07ab]
+2023-12-23 23:22:45 [INFO ] [main] ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.26.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-my-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 20000
+	fetch.min.bytes = 1
+	group.id = my-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 100
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 60000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2023-12-23 23:22:45 [INFO ] [main] AppInfoParser - Kafka version: 3.1.2
+2023-12-23 23:22:45 [INFO ] [main] AppInfoParser - Kafka commitId: f8c67dc3ae0a3265
+2023-12-23 23:22:45 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1703348565786
+2023-12-23 23:22:45 [INFO ] [main] KafkaConsumer - [Consumer clientId=consumer-my-group-1, groupId=my-group] Subscribed to partition(s): demo1-0
+2023-12-23 23:22:45 [INFO ] [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-23 23:22:45 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] KafkaConsumer - [Consumer clientId=consumer-my-group-1, groupId=my-group] Seeking to offset 0 for partition demo1-0
+2023-12-23 23:22:45 [INFO ] [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-23 23:22:45 [INFO ] [main] DemoApplication - Started DemoApplication in 9.562 seconds (JVM running for 10.518)
+2023-12-23 23:22:47 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-23 23:22:47 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:22:47 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2023-12-23 23:22:49 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-23 23:22:49 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:22:49 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2023-12-23 23:22:52 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-23 23:22:52 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:22:52 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2023-12-23 23:22:54 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-23 23:22:54 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:22:54 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2023-12-23 23:22:56 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-23 23:22:56 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:22:56 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2023-12-23 23:22:59 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-23 23:22:59 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:22:59 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2023-12-23 23:23:02 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-23 23:23:02 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:23:02 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2023-12-23 23:23:05 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-23 23:23:05 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:23:05 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2023-12-23 23:23:08 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-23 23:23:08 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:23:08 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2023-12-23 23:23:11 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-23 23:23:11 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:23:11 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2023-12-23 23:23:14 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-23 23:23:14 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:23:14 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2023-12-23 23:23:17 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-23 23:23:17 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:23:17 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2023-12-23 23:23:20 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-23 23:23:20 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:23:20 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2023-12-23 23:23:24 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-23 23:23:24 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:23:24 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2023-12-23 23:23:27 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-23 23:23:27 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:23:27 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2023-12-23 23:23:30 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-23 23:23:30 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:23:30 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2023-12-23 23:23:33 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-23 23:23:33 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:23:33 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2023-12-23 23:23:36 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metadata - [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting the last seen epoch of partition demo1-0 to 0 since the associated topicId changed from null to zy7428AWSnuh7729LH4mMw
+2023-12-23 23:23:36 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metadata - [Consumer clientId=consumer-my-group-1, groupId=my-group] Cluster ID: XhYCgOKUTkW-V17p5M6N4A
+2023-12-23 23:25:10 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] ConsumerCoordinator - [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting generation due to: consumer pro-actively leaving the group
+2023-12-23 23:25:10 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] ConsumerCoordinator - [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: consumer pro-actively leaving the group
+2023-12-23 23:25:10 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] KafkaConsumer - [Consumer clientId=consumer-my-group-1, groupId=my-group] Unsubscribed all topics or patterns and assigned partitions
+2023-12-23 23:25:10 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] ConsumerCoordinator - [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting generation due to: consumer pro-actively leaving the group
+2023-12-23 23:25:10 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] ConsumerCoordinator - [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: consumer pro-actively leaving the group
+2023-12-23 23:25:10 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metrics - Metrics scheduler closed
+2023-12-23 23:25:10 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-12-23 23:25:10 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metrics - Metrics reporters closed
+2023-12-23 23:25:10 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] AppInfoParser - App info kafka.consumer for consumer-my-group-1 unregistered
+2023-12-23 23:25:10 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] KafkaMessageListenerContainer - my-group: Consumer stopped
+2023-12-23 23:25:10 [INFO ] [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-23 23:25:10 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-12-23 23:25:10 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-12-23 23:25:14 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 12372 (D:\demo (9)\demo\target\classes started by ADMIN in D:\demo (9)\demo)
+2023-12-23 23:25:14 [INFO ] [main] DemoApplication - The following 1 profile is active: "docker"
+2023-12-23 23:25:14 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-23 23:25:14 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 3 JPA repository interfaces.
+2023-12-23 23:25:15 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-12-23 23:25:15 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-23 23:25:15 [INFO ] [main] StandardService - Starting service [Tomcat]
+2023-12-23 23:25:15 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-12-23 23:25:15 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2023-12-23 23:25:15 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1044 ms
+2023-12-23 23:25:15 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-23 23:25:15 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-12-23 23:25:15 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-23 23:25:15 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2023-12-23 23:25:15 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2023-12-23 23:25:15 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-12-23 23:25:16 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-23 23:25:16 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-23 23:25:16 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-23 23:25:16 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@762db992, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15a591d9, org.springframework.security.web.context.SecurityContextPersistenceFilter@7ec75228, org.springframework.security.web.header.HeaderWriterFilter@24f77077, org.springframework.security.web.authentication.logout.LogoutFilter@48d14ea0, com.example.config.JwtAuthenticationFilter@475eb4fd, org.springframework.security.web.session.ConcurrentSessionFilter@6bbac73d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8de8b07, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1fe37d27, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5812935, org.springframework.security.web.session.SessionManagementFilter@5e7ea81b, org.springframework.security.web.access.ExceptionTranslationFilter@2eb31735, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7307ae6]
+2023-12-23 23:25:17 [INFO ] [main] ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.26.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-my-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 20000
+	fetch.min.bytes = 1
+	group.id = my-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 100
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 60000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2023-12-23 23:25:17 [INFO ] [main] AppInfoParser - Kafka version: 3.1.2
+2023-12-23 23:25:17 [INFO ] [main] AppInfoParser - Kafka commitId: f8c67dc3ae0a3265
+2023-12-23 23:25:17 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1703348717452
+2023-12-23 23:25:17 [INFO ] [main] KafkaConsumer - [Consumer clientId=consumer-my-group-1, groupId=my-group] Subscribed to partition(s): demo1-0
+2023-12-23 23:25:17 [INFO ] [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-23 23:25:17 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] KafkaConsumer - [Consumer clientId=consumer-my-group-1, groupId=my-group] Seeking to offset 0 for partition demo1-0
+2023-12-23 23:25:17 [INFO ] [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-23 23:25:17 [INFO ] [main] DemoApplication - Started DemoApplication in 3.635 seconds (JVM running for 4.541)
+2023-12-23 23:25:17 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metadata - [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting the last seen epoch of partition demo1-0 to 0 since the associated topicId changed from null to zy7428AWSnuh7729LH4mMw
+2023-12-23 23:25:17 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metadata - [Consumer clientId=consumer-my-group-1, groupId=my-group] Cluster ID: XhYCgOKUTkW-V17p5M6N4A
+2023-12-23 23:25:39 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-23 23:25:39 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2023-12-23 23:25:39 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Cancelled in-flight FETCH request with correlation id 4 due to node 0 being disconnected (elapsed time since creation: 2047ms, elapsed time since send: 2047ms, request timeout: 30000ms)
+2023-12-23 23:25:39 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Cancelled in-flight METADATA request with correlation id 5 due to node 0 being disconnected (elapsed time since creation: 0ms, elapsed time since send: 0ms, request timeout: 30000ms)
+2023-12-23 23:25:39 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1235144524, epoch=1) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2023-12-23 23:25:41 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2023-12-23 23:25:41 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:25:44 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2023-12-23 23:25:44 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:25:44 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1235144524, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2023-12-23 23:25:46 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2023-12-23 23:25:46 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:25:48 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2023-12-23 23:25:48 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:25:48 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1235144524, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2023-12-23 23:25:51 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2023-12-23 23:25:51 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:25:54 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2023-12-23 23:25:54 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:25:57 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2023-12-23 23:25:57 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2023-12-23 23:25:57 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1235144524, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error while fetching metadata with correlation id 10 : {demo1=INVALID_REPLICATION_FACTOR}
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error while fetching metadata with correlation id 11 : {demo1=INVALID_REPLICATION_FACTOR}
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error while fetching metadata with correlation id 12 : {demo1=INVALID_REPLICATION_FACTOR}
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error while fetching metadata with correlation id 13 : {demo1=LEADER_NOT_AVAILABLE}
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error while fetching metadata with correlation id 58 : {demo1=LEADER_NOT_AVAILABLE}
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error while fetching metadata with correlation id 119 : {demo1=LEADER_NOT_AVAILABLE}
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Received unknown topic or partition error in fetch for partition demo1-0
+2023-12-23 23:26:18 [INFO ] [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-23 23:26:18 [INFO ] [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-23 23:26:18 [INFO ] [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+2023-12-23 23:26:21 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metadata - [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting the last seen epoch of partition demo1-0 to 0 since the associated topicId changed from null to zy7428AWSnuh7729LH4mMw
+2023-12-23 23:26:41 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 was unable to process the fetch request with (sessionId=884719914, epoch=120): FETCH_SESSION_TOPIC_ID_ERROR.
+2023-12-23 23:26:45 [INFO ] [http-nio-8080-exec-5] ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [192.168.26.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2023-12-23 23:26:45 [INFO ] [http-nio-8080-exec-5] KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+2023-12-23 23:26:45 [INFO ] [http-nio-8080-exec-5] AppInfoParser - Kafka version: 3.1.2
+2023-12-23 23:26:45 [INFO ] [http-nio-8080-exec-5] AppInfoParser - Kafka commitId: f8c67dc3ae0a3265
+2023-12-23 23:26:45 [INFO ] [http-nio-8080-exec-5] AppInfoParser - Kafka startTimeMs: 1703348805856
+2023-12-23 23:26:45 [INFO ] [kafka-producer-network-thread | producer-1] Metadata - [Producer clientId=producer-1] Cluster ID: XhYCgOKUTkW-V17p5M6N4A
+2023-12-23 23:26:45 [INFO ] [kafka-producer-network-thread | producer-1] TransactionManager - [Producer clientId=producer-1] ProducerId set to 1000 with epoch 0
+2023-12-23 23:26:45 [INFO ] [kafka-producer-network-thread | producer-1] Metadata - [Producer clientId=producer-1] Resetting the last seen epoch of partition demo1-0 to 0 since the associated topicId changed from null to zy7428AWSnuh7729LH4mMw
+2023-12-23 23:27:15 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] ConsumerCoordinator - [Consumer clientId=consumer-my-group-1, groupId=my-group] Discovered group coordinator 192.168.64.1:9092 (id: 2147483647 rack: null)
+2023-12-23 23:33:37 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] ConsumerCoordinator - [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting generation due to: consumer pro-actively leaving the group
+2023-12-23 23:33:37 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] ConsumerCoordinator - [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: consumer pro-actively leaving the group
+2023-12-23 23:33:37 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] KafkaConsumer - [Consumer clientId=consumer-my-group-1, groupId=my-group] Unsubscribed all topics or patterns and assigned partitions
+2023-12-23 23:33:37 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] ConsumerCoordinator - [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting generation due to: consumer pro-actively leaving the group
+2023-12-23 23:33:37 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] ConsumerCoordinator - [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: consumer pro-actively leaving the group
+2023-12-23 23:33:37 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metrics - Metrics scheduler closed
+2023-12-23 23:33:37 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-12-23 23:33:37 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metrics - Metrics reporters closed
+2023-12-23 23:33:37 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] AppInfoParser - App info kafka.consumer for consumer-my-group-1 unregistered
+2023-12-23 23:33:37 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] KafkaMessageListenerContainer - my-group: Consumer stopped
+2023-12-23 23:33:37 [INFO ] [SpringApplicationShutdownHook] KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2023-12-23 23:33:37 [INFO ] [SpringApplicationShutdownHook] Metrics - Metrics scheduler closed
+2023-12-23 23:33:37 [INFO ] [SpringApplicationShutdownHook] Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-12-23 23:33:37 [INFO ] [SpringApplicationShutdownHook] Metrics - Metrics reporters closed
+2023-12-23 23:33:37 [INFO ] [SpringApplicationShutdownHook] AppInfoParser - App info kafka.producer for producer-1 unregistered
+2023-12-23 23:33:37 [INFO ] [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-23 23:33:37 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-12-23 23:33:37 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-12-24 00:04:16 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 5684 (D:\demo (9)\demo\target\classes started by ADMIN in D:\demo (9)\demo)
+2023-12-24 00:04:16 [INFO ] [main] DemoApplication - The following 1 profile is active: "docker"
+2023-12-24 00:04:16 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 00:04:16 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2023-12-24 00:04:17 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-12-24 00:04:17 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 00:04:17 [INFO ] [main] StandardService - Starting service [Tomcat]
+2023-12-24 00:04:17 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-12-24 00:04:17 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2023-12-24 00:04:17 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1079 ms
+2023-12-24 00:04:17 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 00:04:17 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-12-24 00:04:17 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-24 00:04:17 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2023-12-24 00:04:18 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2023-12-24 00:04:18 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-12-24 00:04:18 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-24 00:04:18 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 00:04:19 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 00:04:19 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5a6d4dee, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6447dc25, org.springframework.security.web.context.SecurityContextPersistenceFilter@41736818, org.springframework.security.web.header.HeaderWriterFilter@42fdf45e, org.springframework.security.web.authentication.logout.LogoutFilter@1f7949dc, com.example.config.JwtAuthenticationFilter@79aba813, org.springframework.security.web.session.ConcurrentSessionFilter@1016b44e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@144792d5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a99744a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@705dc1a6, org.springframework.security.web.session.SessionManagementFilter@507fecf3, org.springframework.security.web.access.ExceptionTranslationFilter@7156f8cf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@71e9640]
+2023-12-24 00:04:19 [INFO ] [main] ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.26.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-my-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 20000
+	fetch.min.bytes = 1
+	group.id = my-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 100
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 60000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2023-12-24 00:04:19 [INFO ] [main] AppInfoParser - Kafka version: 3.1.2
+2023-12-24 00:04:19 [INFO ] [main] AppInfoParser - Kafka commitId: f8c67dc3ae0a3265
+2023-12-24 00:04:19 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1703351059828
+2023-12-24 00:04:19 [INFO ] [main] KafkaConsumer - [Consumer clientId=consumer-my-group-1, groupId=my-group] Subscribed to partition(s): demo1-0
+2023-12-24 00:04:19 [INFO ] [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 00:04:19 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] KafkaConsumer - [Consumer clientId=consumer-my-group-1, groupId=my-group] Seeking to offset 0 for partition demo1-0
+2023-12-24 00:04:19 [INFO ] [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-24 00:04:19 [INFO ] [main] DemoApplication - Started DemoApplication in 3.728 seconds (JVM running for 4.62)
+2023-12-24 00:04:20 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metadata - [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting the last seen epoch of partition demo1-0 to 0 since the associated topicId changed from null to zy7428AWSnuh7729LH4mMw
+2023-12-24 00:04:20 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metadata - [Consumer clientId=consumer-my-group-1, groupId=my-group] Cluster ID: XhYCgOKUTkW-V17p5M6N4A
+2023-12-24 00:04:34 [INFO ] [http-nio-8080-exec-2] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-24 00:04:34 [INFO ] [http-nio-8080-exec-2] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-24 00:04:34 [INFO ] [http-nio-8080-exec-2] DispatcherServlet - Completed initialization in 1 ms
+2023-12-24 00:04:37 [INFO ] [http-nio-8080-exec-2] ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [192.168.26.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2023-12-24 00:04:38 [INFO ] [http-nio-8080-exec-2] KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+2023-12-24 00:04:38 [INFO ] [http-nio-8080-exec-2] AppInfoParser - Kafka version: 3.1.2
+2023-12-24 00:04:38 [INFO ] [http-nio-8080-exec-2] AppInfoParser - Kafka commitId: f8c67dc3ae0a3265
+2023-12-24 00:04:38 [INFO ] [http-nio-8080-exec-2] AppInfoParser - Kafka startTimeMs: 1703351078088
+2023-12-24 00:04:38 [INFO ] [kafka-producer-network-thread | producer-1] Metadata - [Producer clientId=producer-1] Cluster ID: XhYCgOKUTkW-V17p5M6N4A
+2023-12-24 00:04:38 [INFO ] [kafka-producer-network-thread | producer-1] TransactionManager - [Producer clientId=producer-1] ProducerId set to 1001 with epoch 0
+2023-12-24 00:04:38 [INFO ] [kafka-producer-network-thread | producer-1] Metadata - [Producer clientId=producer-1] Resetting the last seen epoch of partition demo1-0 to 0 since the associated topicId changed from null to zy7428AWSnuh7729LH4mMw
+2023-12-24 00:04:38 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] ConsumerCoordinator - [Consumer clientId=consumer-my-group-1, groupId=my-group] Discovered group coordinator 192.168.64.1:9092 (id: 2147483647 rack: null)
+2023-12-24 00:07:23 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2023-12-24 00:07:23 [INFO ] [kafka-producer-network-thread | producer-1] NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-12-24 00:07:23 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Cancelled in-flight FETCH request with correlation id 18 due to node 0 being disconnected (elapsed time since creation: 4644ms, elapsed time since send: 4644ms, request timeout: 30000ms)
+2023-12-24 00:07:23 [INFO ] [kafka-producer-network-thread | producer-1] NetworkClient - [Producer clientId=producer-1] Node 0 disconnected.
+2023-12-24 00:07:23 [INFO ] [kafka-producer-network-thread | producer-1] NetworkClient - [Producer clientId=producer-1] Cancelled in-flight METADATA request with correlation id 6 due to node 0 being disconnected (elapsed time since creation: 1ms, elapsed time since send: 1ms, request timeout: 30000ms)
+2023-12-24 00:07:23 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1463370202, epoch=10) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2023-12-24 00:07:23 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 2147483647 disconnected.
+2023-12-24 00:07:23 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-24 00:07:25 [INFO ] [kafka-producer-network-thread | producer-1] NetworkClient - [Producer clientId=producer-1] Node 0 disconnected.
+2023-12-24 00:07:25 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2023-12-24 00:07:25 [WARN ] [kafka-producer-network-thread | producer-1] NetworkClient - [Producer clientId=producer-1] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2023-12-24 00:07:25 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2023-12-24 00:07:25 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1463370202, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2023-12-24 00:07:27 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2023-12-24 00:07:27 [INFO ] [kafka-producer-network-thread | producer-1] NetworkClient - [Producer clientId=producer-1] Node 0 disconnected.
+2023-12-24 00:07:27 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2023-12-24 00:07:27 [WARN ] [kafka-producer-network-thread | producer-1] NetworkClient - [Producer clientId=producer-1] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2023-12-24 14:48:20 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 11064 (D:\demo (9)\demo\target\classes started by ADMIN in D:\demo (9)\demo)
+2023-12-24 14:48:20 [INFO ] [main] DemoApplication - The following 1 profile is active: "docker"
+2023-12-24 14:48:21 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 14:48:21 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
+2023-12-24 14:48:22 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-12-24 14:48:22 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 14:48:22 [INFO ] [main] StandardService - Starting service [Tomcat]
+2023-12-24 14:48:22 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-12-24 14:48:22 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2023-12-24 14:48:22 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1234 ms
+2023-12-24 14:48:22 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 14:48:22 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-12-24 14:48:22 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-24 14:48:22 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2023-12-24 14:48:22 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2023-12-24 14:48:22 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-12-24 14:48:23 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-24 14:48:23 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 14:48:23 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 14:48:24 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@235dacd7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74070994, org.springframework.security.web.context.SecurityContextPersistenceFilter@59509393, org.springframework.security.web.header.HeaderWriterFilter@308d4981, org.springframework.security.web.authentication.logout.LogoutFilter@5f1a3c4, com.example.config.JwtAuthenticationFilter@7f20dfd5, org.springframework.security.web.session.ConcurrentSessionFilter@507fecf3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ec75228, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@38e88e13, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c816f46, org.springframework.security.web.session.SessionManagementFilter@4a249610, org.springframework.security.web.access.ExceptionTranslationFilter@3f465ae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3cc548f6]
+2023-12-24 14:48:24 [INFO ] [main] ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.26.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-my-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 20000
+	fetch.min.bytes = 1
+	group.id = my-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 100
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 60000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2023-12-24 14:48:24 [INFO ] [main] AppInfoParser - Kafka version: 3.1.2
+2023-12-24 14:48:24 [INFO ] [main] AppInfoParser - Kafka commitId: f8c67dc3ae0a3265
+2023-12-24 14:48:24 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1703404104618
+2023-12-24 14:48:24 [INFO ] [main] KafkaConsumer - [Consumer clientId=consumer-my-group-1, groupId=my-group] Subscribed to partition(s): demo1-0
+2023-12-24 14:48:24 [INFO ] [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 14:48:24 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] KafkaConsumer - [Consumer clientId=consumer-my-group-1, groupId=my-group] Seeking to offset 0 for partition demo1-0
+2023-12-24 14:48:24 [INFO ] [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-24 14:48:24 [INFO ] [main] DemoApplication - Started DemoApplication in 4.166 seconds (JVM running for 5.926)
+2023-12-24 14:48:26 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-24 14:48:26 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2023-12-24 14:48:26 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2023-12-24 14:48:28 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-24 14:48:28 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2023-12-24 14:48:28 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2023-12-24 14:48:30 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-24 14:48:30 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2023-12-24 14:48:30 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2023-12-24 14:48:33 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-24 14:48:33 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2023-12-24 14:48:33 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2023-12-24 14:48:35 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2023-12-24 14:48:35 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.

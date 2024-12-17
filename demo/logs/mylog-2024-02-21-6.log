@@ -1,0 +1,778 @@
+2024-02-21 22:45:02 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 10704 (D:\demo (9)\demo\target\classes started by ADMIN in D:\demo (9)\demo)
+2024-02-21 22:45:02 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-21 22:45:03 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-21 22:45:03 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 3 JPA repository interfaces.
+2024-02-21 22:45:03 [INFO ] [main] GenericScope - BeanFactory id=4a8290cf-56d3-35f7-bf42-f6a5475927db
+2024-02-21 22:45:04 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-21 22:45:04 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-21 22:45:04 [INFO ] [main] StandardService - Starting service [Tomcat]
+2024-02-21 22:45:04 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-02-21 22:45:04 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2024-02-21 22:45:04 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1563 ms
+2024-02-21 22:45:04 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-21 22:45:04 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-02-21 22:45:04 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-02-21 22:45:04 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-02-21 22:45:09 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-02-21 22:45:09 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-02-21 22:45:10 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-21 22:45:10 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-21 22:45:10 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-21 22:45:11 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@73f6ffb1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4505ec36, org.springframework.security.web.context.SecurityContextPersistenceFilter@6a9b8f33, org.springframework.security.web.header.HeaderWriterFilter@eb23b9c, org.springframework.security.web.authentication.logout.LogoutFilter@4d9ad37e, com.example.config.JwtAuthenticationFilter@43e9a8a2, org.springframework.security.web.session.ConcurrentSessionFilter@9bd477c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7375ebe7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a744e32, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41fe0d98, org.springframework.security.web.session.SessionManagementFilter@408a0e92, org.springframework.security.web.access.ExceptionTranslationFilter@3ade99bb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3f6fd33b]
+2024-02-21 22:45:12 [INFO ] [main] DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
+2024-02-21 22:45:12 [WARN ] [main] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-02-21 22:45:12 [INFO ] [main] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-21 22:45:12 [INFO ] [main] InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-02-21 22:45:12 [INFO ] [main] DiscoveryClient - Initializing Eureka in region us-east-1
+2024-02-21 22:45:12 [ERROR] [main] EurekaRegistration - error getting CloudEurekaClient
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.eurekaClient' defined in class path resource [org/springframework/cloud/netflix/eureka/EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.discovery.EurekaClient]: Factory method 'eurekaClient' threw exception; nested exception is java.lang.RuntimeException: Failed to initialize DiscoveryClient!
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:376) ~[spring-cloud-context-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179) ~[spring-cloud-context-3.1.3.jar:3.1.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:127) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:115) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282) ~[spring-core-5.3.25.jar:5.3.25]
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:485) ~[spring-cloud-context-3.1.3.jar:3.1.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$14dc46f3.getEurekaClient(<generated>) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.25.jar:5.3.25]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:22) ~[classes/:?]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.discovery.EurekaClient]: Factory method 'eurekaClient' threw exception; nested exception is java.lang.RuntimeException: Failed to initialize DiscoveryClient!
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 41 more
+Caused by: java.lang.RuntimeException: Failed to initialize DiscoveryClient!
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:436) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279) ~[eureka-client-1.10.17.jar:1.10.17]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:66) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:295) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 41 more
+Caused by: java.lang.NoClassDefFoundError: com/sun/jersey/client/apache4/config/DefaultApacheHttpClient4Config
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1016) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:800) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:698) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:621) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579) ~[?:?]
+	at jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
+	at com.netflix.discovery.shared.transport.jersey.EurekaJerseyClientImpl$EurekaJerseyClientBuilder.build(EurekaJerseyClientImpl.java:183) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.jersey.JerseyEurekaHttpClientFactory$JerseyEurekaHttpClientFactoryBuilder.buildLegacy(JerseyEurekaHttpClientFactory.java:230) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.jersey.JerseyEurekaHttpClientFactory$JerseyEurekaHttpClientFactoryBuilder.build(JerseyEurekaHttpClientFactory.java:204) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.jersey.JerseyEurekaHttpClientFactory.create(JerseyEurekaHttpClientFactory.java:161) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.jersey.Jersey1TransportClientFactories.newTransportClientFactory(Jersey1TransportClientFactories.java:59) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.scheduleServerEndpointTask(DiscoveryClient.java:528) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:423) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279) ~[eureka-client-1.10.17.jar:1.10.17]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:66) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:295) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 41 more
+Caused by: java.lang.ClassNotFoundException: com.sun.jersey.client.apache4.config.DefaultApacheHttpClient4Config
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581) ~[?:?]
+	at jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1016) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:800) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:698) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:621) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579) ~[?:?]
+	at jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
+	at com.netflix.discovery.shared.transport.jersey.EurekaJerseyClientImpl$EurekaJerseyClientBuilder.build(EurekaJerseyClientImpl.java:183) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.jersey.JerseyEurekaHttpClientFactory$JerseyEurekaHttpClientFactoryBuilder.buildLegacy(JerseyEurekaHttpClientFactory.java:230) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.jersey.JerseyEurekaHttpClientFactory$JerseyEurekaHttpClientFactoryBuilder.build(JerseyEurekaHttpClientFactory.java:204) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.jersey.JerseyEurekaHttpClientFactory.create(JerseyEurekaHttpClientFactory.java:161) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.jersey.Jersey1TransportClientFactories.newTransportClientFactory(Jersey1TransportClientFactories.java:59) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.scheduleServerEndpointTask(DiscoveryClient.java:528) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:423) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279) ~[eureka-client-1.10.17.jar:1.10.17]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:66) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:295) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 41 more
+2024-02-21 22:45:12 [WARN ] [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'eurekaAutoServiceRegistration'; nested exception is java.lang.NullPointerException
+2024-02-21 22:45:12 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-21 22:45:12 [INFO ] [main] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-02-21 22:45:12 [INFO ] [main] HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-02-21 22:45:12 [INFO ] [main] StandardService - Stopping service [Tomcat]
+2024-02-21 22:45:12 [INFO ] [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-02-21 22:45:12 [ERROR] [main] SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'eurekaAutoServiceRegistration'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.25.jar:5.3.25]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:22) ~[classes/:?]
+Caused by: java.lang.NullPointerException
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.25.jar:5.3.25]
+	... 14 more
+2024-02-21 22:46:07 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 18852 (D:\demo (9)\demo\target\classes started by ADMIN in D:\demo (9)\demo)
+2024-02-21 22:46:07 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-21 22:46:07 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-21 22:46:07 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 3 JPA repository interfaces.
+2024-02-21 22:46:08 [INFO ] [main] GenericScope - BeanFactory id=4a8290cf-56d3-35f7-bf42-f6a5475927db
+2024-02-21 22:46:08 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-21 22:46:08 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-21 22:46:08 [INFO ] [main] StandardService - Starting service [Tomcat]
+2024-02-21 22:46:08 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-02-21 22:46:08 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2024-02-21 22:46:08 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1556 ms
+2024-02-21 22:46:09 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-21 22:46:09 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-02-21 22:46:09 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-02-21 22:46:09 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-02-21 22:46:09 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-02-21 22:46:09 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-02-21 22:46:10 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-21 22:46:10 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-21 22:46:10 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-21 22:46:10 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a70acd5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@475fb7, org.springframework.security.web.context.SecurityContextPersistenceFilter@8d5b303, org.springframework.security.web.header.HeaderWriterFilter@56ece9c, org.springframework.security.web.authentication.logout.LogoutFilter@58e2af93, com.example.config.JwtAuthenticationFilter@7f97e963, org.springframework.security.web.session.ConcurrentSessionFilter@3958e148, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56a6aadb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77c1a7ce, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41db6e4b, org.springframework.security.web.session.SessionManagementFilter@6ca9ec77, org.springframework.security.web.access.ExceptionTranslationFilter@620260ad, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6d76aa05]
+2024-02-21 22:46:11 [INFO ] [main] DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
+2024-02-21 22:46:11 [WARN ] [main] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-02-21 22:46:11 [INFO ] [main] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-21 22:46:11 [INFO ] [main] InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-02-21 22:46:11 [INFO ] [main] DiscoveryClient - Initializing Eureka in region us-east-1
+2024-02-21 22:46:11 [ERROR] [main] EurekaRegistration - error getting CloudEurekaClient
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.eurekaClient' defined in class path resource [org/springframework/cloud/netflix/eureka/EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.discovery.EurekaClient]: Factory method 'eurekaClient' threw exception; nested exception is java.lang.RuntimeException: Failed to initialize DiscoveryClient!
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:376) ~[spring-cloud-context-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179) ~[spring-cloud-context-3.1.3.jar:3.1.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:127) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:115) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282) ~[spring-core-5.3.25.jar:5.3.25]
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:485) ~[spring-cloud-context-3.1.3.jar:3.1.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.25.jar:5.3.25]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$906191d4.getEurekaClient(<generated>) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.25.jar:5.3.25]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:22) ~[classes/:?]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.discovery.EurekaClient]: Factory method 'eurekaClient' threw exception; nested exception is java.lang.RuntimeException: Failed to initialize DiscoveryClient!
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 41 more
+Caused by: java.lang.RuntimeException: Failed to initialize DiscoveryClient!
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:436) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279) ~[eureka-client-1.10.17.jar:1.10.17]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:66) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:295) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 41 more
+Caused by: java.lang.NoClassDefFoundError: com/sun/jersey/client/apache4/config/DefaultApacheHttpClient4Config
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1016) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:800) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:698) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:621) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579) ~[?:?]
+	at jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
+	at com.netflix.discovery.shared.transport.jersey.EurekaJerseyClientImpl$EurekaJerseyClientBuilder.build(EurekaJerseyClientImpl.java:183) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.jersey.JerseyEurekaHttpClientFactory$JerseyEurekaHttpClientFactoryBuilder.buildLegacy(JerseyEurekaHttpClientFactory.java:230) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.jersey.JerseyEurekaHttpClientFactory$JerseyEurekaHttpClientFactoryBuilder.build(JerseyEurekaHttpClientFactory.java:204) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.jersey.JerseyEurekaHttpClientFactory.create(JerseyEurekaHttpClientFactory.java:161) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.jersey.Jersey1TransportClientFactories.newTransportClientFactory(Jersey1TransportClientFactories.java:59) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.scheduleServerEndpointTask(DiscoveryClient.java:528) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:423) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279) ~[eureka-client-1.10.17.jar:1.10.17]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:66) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:295) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 41 more
+Caused by: java.lang.ClassNotFoundException: com.sun.jersey.client.apache4.config.DefaultApacheHttpClient4Config
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581) ~[?:?]
+	at jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1016) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:800) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:698) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:621) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579) ~[?:?]
+	at jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
+	at com.netflix.discovery.shared.transport.jersey.EurekaJerseyClientImpl$EurekaJerseyClientBuilder.build(EurekaJerseyClientImpl.java:183) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.jersey.JerseyEurekaHttpClientFactory$JerseyEurekaHttpClientFactoryBuilder.buildLegacy(JerseyEurekaHttpClientFactory.java:230) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.jersey.JerseyEurekaHttpClientFactory$JerseyEurekaHttpClientFactoryBuilder.build(JerseyEurekaHttpClientFactory.java:204) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.jersey.JerseyEurekaHttpClientFactory.create(JerseyEurekaHttpClientFactory.java:161) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.jersey.Jersey1TransportClientFactories.newTransportClientFactory(Jersey1TransportClientFactories.java:59) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.scheduleServerEndpointTask(DiscoveryClient.java:528) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:423) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279) ~[eureka-client-1.10.17.jar:1.10.17]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:66) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:295) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 41 more
+2024-02-21 22:46:11 [WARN ] [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'eurekaAutoServiceRegistration'; nested exception is java.lang.NullPointerException
+2024-02-21 22:46:11 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-21 22:46:11 [INFO ] [main] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-02-21 22:46:11 [INFO ] [main] HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-02-21 22:46:11 [INFO ] [main] StandardService - Stopping service [Tomcat]
+2024-02-21 22:46:11 [INFO ] [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-02-21 22:46:11 [ERROR] [main] SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'eurekaAutoServiceRegistration'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.25.jar:5.3.25]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.9-20230223.030705-36.jar:2.7.9-SNAPSHOT]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:22) ~[classes/:?]
+Caused by: java.lang.NullPointerException
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83) ~[spring-cloud-netflix-eureka-client-3.1.3.jar:3.1.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.25.jar:5.3.25]
+	... 14 more
+2024-02-21 22:46:30 [WARN ] [main] DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/ADMIN/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/ADMIN/.m2/repository/org/json/json/20231013/json-20231013.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-02-21 22:46:30 [INFO ] [main] DemoApplicationTests - Starting DemoApplicationTests using Java 11.0.17 on DESKTOP-8RGGIEH with PID 9516 (started by ADMIN in D:\demo (9)\demo)
+2024-02-21 22:46:30 [INFO ] [main] DemoApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-02-21 22:46:31 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-21 22:46:31 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
+2024-02-21 22:46:31 [INFO ] [main] GenericScope - BeanFactory id=c5159aeb-dcce-3b00-bdde-68bfafc413b0
+2024-02-21 22:46:32 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-21 22:46:32 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-02-21 22:46:32 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-02-21 22:46:32 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-02-21 22:46:32 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-02-21 22:46:32 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-02-21 22:46:33 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-21 22:46:33 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-21 22:46:34 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-21 22:46:34 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1ab780fd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b8683b8, org.springframework.security.web.context.SecurityContextPersistenceFilter@d79a69b, org.springframework.security.web.header.HeaderWriterFilter@74471600, org.springframework.security.web.authentication.logout.LogoutFilter@1737834, com.example.config.JwtAuthenticationFilter@5c6be812, org.springframework.security.web.session.ConcurrentSessionFilter@54a7d1b9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c83e9ca, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b21cbbf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@495598c5, org.springframework.security.web.session.SessionManagementFilter@5ae6119b, org.springframework.security.web.access.ExceptionTranslationFilter@49b73e6c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6700374f]
+2024-02-21 22:46:35 [INFO ] [main] ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.26.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-my-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 20000
+	fetch.min.bytes = 1
+	group.id = my-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 100
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 60000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2024-02-21 22:46:35 [INFO ] [main] AppInfoParser - Kafka version: 3.1.2
+2024-02-21 22:46:35 [INFO ] [main] AppInfoParser - Kafka commitId: f8c67dc3ae0a3265
+2024-02-21 22:46:35 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1708530395770
+2024-02-21 22:46:35 [INFO ] [main] KafkaConsumer - [Consumer clientId=consumer-my-group-1, groupId=my-group] Subscribed to partition(s): demo1-0
+2024-02-21 22:46:35 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] KafkaConsumer - [Consumer clientId=consumer-my-group-1, groupId=my-group] Seeking to offset 0 for partition demo1-0
+2024-02-21 22:46:35 [INFO ] [main] DemoApplicationTests - Started DemoApplicationTests in 5.709 seconds (JVM running for 6.78)
+2024-02-21 22:46:35 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] ConsumerCoordinator - [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting generation due to: consumer pro-actively leaving the group
+2024-02-21 22:46:35 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] ConsumerCoordinator - [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: consumer pro-actively leaving the group
+2024-02-21 22:46:35 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] KafkaConsumer - [Consumer clientId=consumer-my-group-1, groupId=my-group] Unsubscribed all topics or patterns and assigned partitions
+2024-02-21 22:46:35 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] ConsumerCoordinator - [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting generation due to: consumer pro-actively leaving the group
+2024-02-21 22:46:35 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] ConsumerCoordinator - [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: consumer pro-actively leaving the group
+2024-02-21 22:46:35 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metrics - Metrics scheduler closed
+2024-02-21 22:46:35 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-02-21 22:46:35 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metrics - Metrics reporters closed
+2024-02-21 22:46:35 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] AppInfoParser - App info kafka.consumer for consumer-my-group-1 unregistered
+2024-02-21 22:46:35 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] KafkaMessageListenerContainer - my-group: Consumer stopped
+2024-02-21 22:46:35 [INFO ] [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-21 22:46:35 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-02-21 22:46:36 [INFO ] [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-02-21 22:46:59 [INFO ] [main] DemoApplication - Starting DemoApplication using Java 11.0.17 on DESKTOP-8RGGIEH with PID 9268 (D:\demo (9)\demo\target\classes started by ADMIN in D:\demo (9)\demo)
+2024-02-21 22:46:59 [INFO ] [main] DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-21 22:47:00 [INFO ] [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-21 22:47:00 [INFO ] [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 3 JPA repository interfaces.
+2024-02-21 22:47:00 [INFO ] [main] GenericScope - BeanFactory id=b2ecd949-a905-34fd-83b4-c68e0ad64c3b
+2024-02-21 22:47:00 [INFO ] [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-21 22:47:00 [INFO ] [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-21 22:47:00 [INFO ] [main] StandardService - Starting service [Tomcat]
+2024-02-21 22:47:00 [INFO ] [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-02-21 22:47:00 [INFO ] [main] [/] - Initializing Spring embedded WebApplicationContext
+2024-02-21 22:47:00 [INFO ] [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1252 ms
+2024-02-21 22:47:01 [INFO ] [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-21 22:47:01 [INFO ] [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-02-21 22:47:01 [INFO ] [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-02-21 22:47:01 [INFO ] [main] HikariDataSource - HikariPool-1 - Starting...
+2024-02-21 22:47:01 [INFO ] [main] HikariDataSource - HikariPool-1 - Start completed.
+2024-02-21 22:47:01 [INFO ] [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-02-21 22:47:02 [INFO ] [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-21 22:47:02 [INFO ] [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-21 22:47:02 [WARN ] [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-21 22:47:02 [INFO ] [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5af7e2f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2df24f19, org.springframework.security.web.context.SecurityContextPersistenceFilter@344acc03, org.springframework.security.web.header.HeaderWriterFilter@69c263f8, org.springframework.security.web.authentication.logout.LogoutFilter@76876421, com.example.config.JwtAuthenticationFilter@3b9a2629, org.springframework.security.web.session.ConcurrentSessionFilter@f10927f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4bba2704, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58038583, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c76762, org.springframework.security.web.session.SessionManagementFilter@7db679, org.springframework.security.web.access.ExceptionTranslationFilter@cce672c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@795e8ef5]
+2024-02-21 22:47:03 [INFO ] [main] ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.26.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-my-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 20000
+	fetch.min.bytes = 1
+	group.id = my-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 100
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 60000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2024-02-21 22:47:03 [INFO ] [main] AppInfoParser - Kafka version: 3.1.2
+2024-02-21 22:47:03 [INFO ] [main] AppInfoParser - Kafka commitId: f8c67dc3ae0a3265
+2024-02-21 22:47:03 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1708530423294
+2024-02-21 22:47:03 [INFO ] [main] KafkaConsumer - [Consumer clientId=consumer-my-group-1, groupId=my-group] Subscribed to partition(s): demo1-0
+2024-02-21 22:47:03 [INFO ] [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-21 22:47:03 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] KafkaConsumer - [Consumer clientId=consumer-my-group-1, groupId=my-group] Seeking to offset 0 for partition demo1-0
+2024-02-21 22:47:03 [INFO ] [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-21 22:47:03 [INFO ] [main] DemoApplication - Started DemoApplication in 4.275 seconds (JVM running for 5.207)
+2024-02-21 22:47:05 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-21 22:47:05 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:47:05 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-21 22:47:07 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-21 22:47:07 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:47:07 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-21 22:47:09 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-21 22:47:09 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:47:09 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-21 22:47:11 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-21 22:47:11 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:47:11 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-21 22:47:14 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-21 22:47:14 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:47:14 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-21 22:47:17 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-21 22:47:17 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:47:17 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-21 22:47:20 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-21 22:47:20 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:47:20 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-21 22:47:23 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-21 22:47:23 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (/192.168.26.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:47:23 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker 192.168.26.1:9092 (id: -1 rack: null) disconnected
+2024-02-21 22:47:26 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error while fetching metadata with correlation id 1 : {demo1=INVALID_REPLICATION_FACTOR}
+2024-02-21 22:47:26 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error while fetching metadata with correlation id 2 : {demo1=INVALID_REPLICATION_FACTOR}
+2024-02-21 22:47:26 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error while fetching metadata with correlation id 3 : {demo1=LEADER_NOT_AVAILABLE}
+2024-02-21 22:47:26 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metadata - [Consumer clientId=consumer-my-group-1, groupId=my-group] Cluster ID: XhYCgOKUTkW-V17p5M6N4A
+2024-02-21 22:47:26 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error while fetching metadata with correlation id 5 : {demo1=LEADER_NOT_AVAILABLE}
+2024-02-21 22:47:26 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metadata - [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting the last seen epoch of partition demo1-0 to 0 since the associated topicId changed from null to zy7428AWSnuh7729LH4mMw
+2024-02-21 22:47:26 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Fetcher - [Consumer clientId=consumer-my-group-1, groupId=my-group] Fetch position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.64.1:9092 (id: 0 rack: null)], epoch=0}} is out of range for partition demo1-0, resetting offset
+2024-02-21 22:47:26 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] SubscriptionState - [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting offset for partition demo1-0 to position FetchPosition{offset=4, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.64.1:9092 (id: 0 rack: null)], epoch=0}}.
+2024-02-21 22:47:36 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2024-02-21 22:47:36 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:47:36 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Cancelled in-flight FETCH request with correlation id 9 due to node 0 being disconnected (elapsed time since creation: 9719ms, elapsed time since send: 9719ms, request timeout: 30000ms)
+2024-02-21 22:47:36 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Cancelled in-flight METADATA request with correlation id 10 due to node 0 being disconnected (elapsed time since creation: 0ms, elapsed time since send: 0ms, request timeout: 30000ms)
+2024-02-21 22:47:36 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=1) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 22:47:38 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:47:38 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:47:38 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 22:47:40 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:47:40 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:47:43 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:47:43 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:47:45 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:47:45 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:47:48 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:47:48 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:47:51 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:47:51 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:47:54 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:47:54 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:47:54 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 22:47:57 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:47:57 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:48:00 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:48:00 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:48:00 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 22:48:03 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:48:03 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:48:06 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:48:06 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:48:09 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:48:09 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:48:09 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 22:48:12 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:48:12 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:48:15 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:48:15 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:48:18 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:48:18 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:48:18 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 22:48:21 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:48:21 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:48:25 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:48:25 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:48:25 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 22:48:27 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:48:27 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:48:31 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:48:31 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:48:34 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:48:34 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:48:34 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 22:48:37 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:48:37 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:48:40 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:48:40 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:48:40 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 22:48:43 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:48:43 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:48:46 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:48:46 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:48:49 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:48:49 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:48:49 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 22:48:52 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:48:52 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:48:55 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:48:55 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:48:58 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:48:58 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:48:58 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 22:49:01 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:49:01 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:49:05 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:49:05 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:49:05 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 22:49:08 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:49:08 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:49:11 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:49:11 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:49:14 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:49:14 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:49:14 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 22:49:17 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:49:17 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:49:20 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:49:20 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:49:20 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 22:49:23 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:49:23 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:49:23 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 22:49:26 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:49:26 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:49:29 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:49:29 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:49:29 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 22:49:32 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:49:32 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:49:35 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:49:35 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:49:38 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:49:38 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:49:38 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 22:49:41 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:49:41 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:49:44 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:49:44 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:49:44 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2024-02-21 22:49:47 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:49:47 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:49:51 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:49:51 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:49:54 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Node 0 disconnected.
+2024-02-21 22:49:54 [WARN ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] NetworkClient - [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node 0 (/192.168.64.1:9092) could not be established. Broker may not be available.
+2024-02-21 22:49:54 [INFO ] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] FetchSessionHandler - [Consumer clientId=consumer-my-group-1, groupId=my-group] Error sending fetch request (sessionId=1656432741, epoch=INITIAL) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null

@@ -1,0 +1,35 @@
+logging:
+    config: classpath:log4j2-dev.xml
+security:
+    basic:
+        enable: false
+    ignored: /**
+spring:
+    datasource:
+        connectionProperties: useUnicode=true;characterEncoding=UTF-8;autoReconnect=true;useSSL=false
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: ROOT
+#        url: jdbc:mysql://mysql-container12:3306/sakila
+        url: jdbc:mysql://192.168.26.1:3306/sakila
+        username: root
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5Dialect
+    main:
+        allow-circular-references: true
+
+    kafka:
+        bootstrap-servers: 192.168.26.1:9092
+        consumer:
+            group-id: my-group
+    data:
+        mongodb:
+            host: localhost
+            port: 27017
+            database: local
+    mvc:
+        pathmatch:
+            matching-strategy: ANT_PATH_MATCHER
